@@ -5,12 +5,16 @@ function char_map_create() {
 	};
 }
 
+function char_map_default(char_map, default_state) {
+	char_map.defaultState = default_state;
+}
+
 function char_map_4dir(char_map, state_name, up, down, left, right) {
 	char_map.state[$ state_name] = [right, down, left, up];
 }
 
-function char_map_default(char_map, default_state) {
-	char_map.defaultState = default_state;
+function char_map_1dir(char_map, state_name, sprite) {
+	char_map.state[$ state_name] = sprite;
 }
 
 function char_sprite_create(char_map, inst_id = id) {
@@ -70,13 +74,16 @@ function char_sprite_update(char_sprite) {
 		par.image_index = 0;
 	}
 	
-	var angle = modulo(darctan2(char.faceY, char.faceX), 360);
 	var state = char.stateStruct[$ char.state];
-	if is_undefined(state) {
+	if is_array(state) {
+		var angle = modulo(darctan2(char.faceY, char.faceX), 360);
+		par.sprite_index = state[round(angle / 90)];
+	} else if is_real(state) {
+		par.sprite_index = state;
+	} else {
 		par.sprite_index = -1;
 		return;
 	}
-	par.sprite_index = state[round(angle / 90)];
 }
 
 function char_sprite_get_state(char_sprite) {

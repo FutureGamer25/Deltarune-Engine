@@ -1,6 +1,7 @@
 #macro __dialog_box_width 176
 #macro __dialog_box_height 56
 #macro __dialog_box_sep 16
+#macro __dialog_command_prefix "#"
 
 function dialog_start(lang_key, top_of_screen = undefined, pause = true) {
 	var inst = dialog_create(lang_get_array(lang_key), top_of_screen);
@@ -49,6 +50,26 @@ function dialog_character(char_name, default_face_spr, default_talk_spr = defaul
 		defaultFace : default_face_spr,
 		defaultTalk : default_talk_spr
 	};
+}
+
+function dialog_get_command(str) {
+	static pre = __dialog_command_prefix;
+	static preLen = string_length(pre);
+	static empty = [" ", "\t"];
+	
+	var struct = {command : "", param : ""};
+	
+	if (string_copy(str, 1, preLen) != pre) return struct;
+	str = string_delete(str, 1, preLen);
+	
+	str = string_trim_start(str, empty);
+	var par = string_split_ext(str, empty, false, 1); //spaces and tabs
+	var len = array_length(par);
+	if (len = 0) return struct;
+	
+	struct.command = par[0];
+	if (len >= 2) struct.param = string_trim_start(par[1], empty);
+	return struct;
 }
 
 #region init

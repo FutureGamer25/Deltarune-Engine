@@ -25,8 +25,10 @@ textObj = text_create();
 next_page = function() {
 	while ((++ pageIndex) < array_length(pages)) {
 		var text = pages[pageIndex];
-		var command = get_command(text);
-		var param = get_param(text, command);
+		
+		var cm = dialog_get_command(text);
+		var command = cm.command;
+		var param = cm.param;
 		
 		switch command {
 		default:
@@ -99,7 +101,7 @@ next_page = function() {
 			array_push(optionText, param);
 			
 			if ((pageIndex + 1) >= array_length(pages)) return true;
-			if (get_command(pages[pageIndex + 1]) != "option") return true;
+			if (dialog_get_command(pages[pageIndex + 1]).command != "option") return true;
 			break;
 		}
 	}
@@ -132,17 +134,5 @@ close = function() {
 		endFunc();
 	}
 	instance_destroy();
-}
-
-get_command = function(str) {
-	if (string_char_at(str, 1) != "#") return "";
-	var first = string_char_at(str, 2);
-	if (first = " " || first = "\t") return "";
-	var param = string_split_ext(str, [" ", "\t"], false, 1); //spaces and tabs
-	return string_delete(param[0], 1, 1); //remove #
-}
-
-get_param = function(str, command) {
-	return string_trim_start(string_delete(str, 1, string_length(command) + 2), [" ", "\t"]);
 }
 #endregion
