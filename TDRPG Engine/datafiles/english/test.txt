@@ -1,0 +1,16 @@
+		   [test1] The quick brown dog jumped##like {shade, 2}really{/shade} high dude!!!!!! //dumbass
+	  second page##cool as ever!!!	
+	  " th "
+	  [test2]
+	  "[so coool//yass]" aioushf//kjasf
+[test3] "improve##your life"
+[hi]
+welcome to hell
+#choice go to hell?
+#option [hi_1] YESSSSSS
+#option [hi_2] no.
+[hi_1]
+#function hell
+given hell
+[hi_2]
+dam

@@ -1,0 +1,39 @@
+[potted_plant] It's a potted plant, what do you want
+[potted_plant_2] Okey I lied it's actually a book...
+
+[hallway_bookshelf]
+#char jeff
+hi there my {wave}lovely{/wave} wife
+#face happy
+{shake}I've been looking all over for {c red}you{/c}{/shake}
+#char
+He's not your husband.
+#char jeff
+#face happy
+{scared}Don't listen to the narration, I love you with all my heart and soul{/scared}
+#face normal
+you know that right?
+
+//#sound sans
+//Hi {wave}{col green}{player_name}{/col}!!!!!!!!!{/wave}
+//{scared}This entire string has typing sounds, and it's painful to the ears. Hope you're happy {wait 0.5}loser...
+//#sprite spr_potted_plant
+//#color red //wow dialog commands
+//A {wave}catalog{/wave} of your sins.
+//{snd harsh}{font arial}{spd 4}{scared}Tread {shake}lightly.
+//#color white
+//thx {spr spr_player_walk_down}{wait 0.5} it means a lot
+
+[ice_cream_salesman]
+Hello, I’m the {c blue}ice cream{/c} salesman!
+I sell {c blue}ice cream{/c}!
+#choice Do you want any {c blue}ice cream{/c}?
+#option [ice_cream_yes] Yes sir!
+#option [ice_cream_no] No thanks.
+
+[ice_cream_yes]
+Well here you go then!
+That'd be 10 bucks.
+
+[ice_cream_no]
+Oh well... come again when you've improved your tastes!

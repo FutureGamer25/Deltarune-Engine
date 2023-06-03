@@ -1,0 +1,19 @@
+[potted_plant] Holy frick scott the woz
+[potted_plant_2] Wowwwwww
+
+[hallway_bookshelf]
+hehe spanish bookshelf uwu
+
+[ice_cream_salesman]
+Hello, I’m the spanish version of the {color,blue}ice cream{/color} salesman!
+I sell {color,blue}ice cream{/color}!
+#choice Do you want any {color,blue}ice cream{/color}?
+#option [ice_cream_yes] Yes sir!
+#option [ice_cream_no] No thanks.
+
+[ice_cream_yes]
+Well here you go then!
+That'd be 10 bucks.
+
+[ice_cream_no]
+Oh well... come again when you've improved your tastes!
