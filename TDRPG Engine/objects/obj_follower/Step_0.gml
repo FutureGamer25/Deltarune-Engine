@@ -1,7 +1,7 @@
 var newPos = follower_get_pos(index);
 
 if (newPos > pos) {
-	pos = newPos;
+	pos = newPos
 	var data = follower_get_data(pos);
 	
 	x = data.x;
@@ -10,6 +10,7 @@ if (newPos > pos) {
 	char_sprite_dir(charSprite, data.dirX, data.dirY);
 	char_sprite_state(charSprite, data.state);
 } else {
+	image_speed = 1;
 	char_sprite_state_delay(charSprite, "stand");
 }
 

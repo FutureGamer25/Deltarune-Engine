@@ -12,5 +12,3 @@ case "center":
 	camera_pos();
 	break;
 }
-
-layer_instances_sort_depth("depth");

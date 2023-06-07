@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Random Stuff",
-    "path": "folders/General/Random Stuff.yy",
+    "name": "Test Stuff",
+    "path": "folders/General/Test Stuff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

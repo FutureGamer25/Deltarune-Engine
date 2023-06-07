@@ -8,8 +8,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_basic_interactable","path":"objects/obj_basic_interactable/obj_basic_interactable.yy",},"propertyId":{"name":"dialog_key_1","path":"objects/obj_basic_interactable/obj_basic_interactable.yy",},"value":"ice_cream_salesman",},
   ],
   "parent": {
-    "name": "Random Stuff",
-    "path": "folders/General/Random Stuff.yy",
+    "name": "Test Stuff",
+    "path": "folders/General/Test Stuff.yy",
   },
   "parentObjectId": {
     "name": "obj_basic_interactable",

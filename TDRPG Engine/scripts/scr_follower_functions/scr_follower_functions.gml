@@ -1,8 +1,3 @@
-function follower_init() {
-	follower_remove_all();
-	instance_create_depth(0, 0, 0, obj_follower_controller);
-}
-
 function follower_reset() { //set to player position
 	with obj_follower_controller {
 		data = [];
@@ -15,6 +10,10 @@ function follower_reset() { //set to player position
 }
 
 function follower_add(obj = obj_follower) {
+	if (!instance_exists(obj_follower_controller)) {
+		instance_create_depth(0, 0, 0, obj_follower_controller);
+	}
+	
 	with obj_follower_controller {
 		var fol = instance_create_layer(obj_player.x, obj_player.y, obj_player.layer, obj);
 		follower[folCount] = fol;

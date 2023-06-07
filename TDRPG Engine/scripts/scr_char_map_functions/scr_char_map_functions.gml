@@ -18,7 +18,7 @@ function char_map_1dir(char_map, state_name, sprite) {
 }
 
 function char_sprite_create(char_map, inst_id = id) {
-	var defState = char_map.defaultState
+	var defState = char_map.defaultState;
 	return {
 		parent : inst_id,
 		faceX : 0,
@@ -84,6 +84,14 @@ function char_sprite_update(char_sprite) {
 		par.sprite_index = -1;
 		return;
 	}
+}
+
+function char_sprite_set_map(char_sprite, char_map) {
+	var defState = char_map.defaultState;
+	char_sprite.stateStruct = char_map.state;
+	char_sprite.state = defState;
+	char_sprite.prevState = defState;
+	char_sprite.targetState = defState;
 }
 
 function char_sprite_get_state(char_sprite) {

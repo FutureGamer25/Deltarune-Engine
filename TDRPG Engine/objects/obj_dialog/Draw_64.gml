@@ -13,7 +13,6 @@ if (!is_undefined(character)) {
 }
 
 if (sprite_index > 0) {
-	
 	draw_sprite(sprite_index, image_index, x + 25, y + height / 2);
 	borderLeft = 50;
 }

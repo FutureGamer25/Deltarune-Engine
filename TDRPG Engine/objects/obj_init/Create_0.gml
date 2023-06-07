@@ -1,9 +1,11 @@
 randomize();
 
 #region window
+//remember to set the size of rm_init to the scaled dimensions
+//otherwise the screen may look weird for a second
 global.dt = 1 / room_speed;
-global.view_width = 240;
-global.view_height = 180;
+global.view_width = 320;
+global.view_height = 240;
 global.view_scale = 2;
 var width = global.view_width;
 var height = global.view_height;
@@ -58,6 +60,8 @@ dialog_character("jeff", sprite_2, sprite_0, snd_dialog_sans, {
 	normal_talk : sprite_0,
 });
 #endregion
+
+instance_create_depth(0, 0, 0, obj_layer_sort_depth);
 
 instance_create_depth(0, 0, 0, obj_game);
 
