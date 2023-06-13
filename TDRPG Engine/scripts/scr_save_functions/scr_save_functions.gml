@@ -20,37 +20,37 @@ function load_game() {
 
 #region key functions
 function save_key(key, value) {
-	global.saveData.general[$ key] = value;
+	global.saveData.data.general[$ key] = value;
 }
 
 function load_key(key, _default) {
-	return global.saveData.general[$ key] ?? _default;
+	return global.saveData.data.general[$ key] ?? _default;
 }
 
 function save_key_room(key, value) {
 	var roomName = room_get_name(room);
-	var rm = global.saveData.rooms[$ roomName];
+	var rm = global.saveData.data.rooms[$ roomName];
 	if is_undefined(rm) {
 		rm = {};
-		global.saveData.rooms[$ roomName] = rm;
+		global.saveData.data.rooms[$ roomName] = rm;
 	}
 	rm[$ key] = value;
 }
 
 function load_key_room(key, _default) {
 	var roomName = room_get_name(room);
-	var rm = global.saveData.rooms[$ roomName];
+	var rm = global.saveData.data.rooms[$ roomName];
 	if is_undefined(rm) return _default;
 	return rm[$ key] ?? _default;
 }
 
 function save_key_static(key, value) {
-	global.saveDataStatic[$ key] = value;
-	save_json(global.saveFileStatic, global.saveDataStatic);
+	global.saveData.staticData[$ key] = value;
+	save_json(global.saveFileStatic, global.saveData.staticData);
 }
 
 function load_key_static(key, _default) {
-	return global.saveDataStatic[$ key] ?? _default;
+	return global.saveData.staticData[$ key] ?? _default;
 }
 
 function save_key_global(key, value) {
@@ -75,30 +75,52 @@ function save_get_slot() {
 	return global.saveSlot;
 }
 
+function save_slot_exists(slot) {
+	var oldSlot = save_get_slot();
+	save_set_slot(slot);
+	var exists = (file_exists(global.saveFile) || file_exists(global.saveFileStatic));
+	save_set_slot(oldSlot);
+	return exists;
+}
+
+function load_slot_temp_start(slot) {
+	global.saveDataOld = global.saveData;
+	global.saveSlotOld = save_get_slot();
+	save_set_slot(slot);
+	load_all_data();
+}
+
+function load_slot_temp_end() {
+	save_set_slot(global.saveSlotOld);
+	global.saveData = global.saveDataOld;
+}
+
 function save_reset_keys() {
 	global.saveData = {
-		general : {},
-		rooms : {}
+		data : {
+			general : {},
+			rooms : {}
+		},
+		staticData : {}
 	};
-	
-	global.saveDataStatic = {};
 }
 #endregion
 
 #region game data
 function save_all_data() {
-	save_json(global.saveFile, global.saveData);
+	save_json(global.saveFile, global.saveData.data);
 	
-	if (struct_names_count(global.saveDataStatic) > 0) {
-		save_json(global.saveFileStatic, global.saveDataStatic);
+	if (struct_names_count(global.saveData.staticData) > 0) {
+		save_json(global.saveFileStatic, global.saveData.staticData);
 	}
 }
 
 function load_all_data() {
-	global.saveData = load_json(global.saveFile);
-	if is_undefined(global.saveData) save_reset_keys();
+	save_reset_keys();
+	var data = load_json(global.saveFile);
+	if (!is_undefined(data)) global.saveData.data = data;
 	
-	global.saveDataStatic = load_json(global.saveFileStatic) ?? {};
+	global.saveData.staticData = load_json(global.saveFileStatic) ?? {};
 }
 #endregion
 
@@ -111,8 +133,8 @@ function save_json(file_name, struct_or_array) {
 }
 
 function load_json(file_name) {
+	if (!file_exists(file_name)) return undefined;
 	var file = file_text_open_read(file_name);
-	if (file = -1) return undefined;
 	var json = file_text_read_string(file);
 	file_text_close(file);
 	if (json = "") return undefined;

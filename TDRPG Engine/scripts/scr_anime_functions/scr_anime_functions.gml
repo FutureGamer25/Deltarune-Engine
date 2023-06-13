@@ -42,7 +42,10 @@ function __anime_class(start_val) constructor {
 	}
 	
 	static stop = function() {
-		call_cancel(timeSource);
+		if (timeSource != -1) {
+			call_cancel(timeSource);
+			timeSource = -1;
+		}
 		return id.ref;
 	}
 	
