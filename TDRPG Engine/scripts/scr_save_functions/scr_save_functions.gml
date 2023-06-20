@@ -66,27 +66,29 @@ function load_key_global(key, _default) {
 #region misc functions
 function save_set_slot(slot_index) {
 	global.saveSlot = slot_index;
-	var str = string(slot_index);
-	global.saveFile = "save_" + str;
-	global.saveFileStatic = "save_static_" + str;
+	var file = save_slot_get_fnames(slot_index);
+	global.saveFile = file[0];
+	global.saveFileStatic = file[1];
 }
 
 function save_get_slot() {
 	return global.saveSlot;
 }
 
-function save_slot_exists(slot) {
-	var oldSlot = save_get_slot();
-	save_set_slot(slot);
-	var exists = (file_exists(global.saveFile) || file_exists(global.saveFileStatic));
-	save_set_slot(oldSlot);
-	return exists;
+function save_slot_exists(slot_index) {
+	var file = save_slot_get_fnames(slot_index);
+	return (file_exists(file[0]) || file_exists(file[1]));
 }
 
-function load_slot_temp_start(slot) {
+function save_slot_get_fnames(slot_index) {
+	var str = string(slot_index);
+	return ["save_" + str, "save_static_" + str];
+}
+
+function load_slot_temp_start(slot_index) {
 	global.saveDataOld = global.saveData;
 	global.saveSlotOld = save_get_slot();
-	save_set_slot(slot);
+	save_set_slot(slot_index);
 	load_all_data();
 }
 
