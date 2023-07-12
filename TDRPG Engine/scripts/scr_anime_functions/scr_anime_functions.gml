@@ -24,6 +24,7 @@ function __anime_class(start_val) constructor {
 	
 	static loop = function(_loop = true) {
 		doLoop = _loop;
+		return id.ref;
 	}
 	
 	static start = function(call_method = func) {
