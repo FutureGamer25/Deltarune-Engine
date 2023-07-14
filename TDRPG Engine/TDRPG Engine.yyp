@@ -37,6 +37,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Room Fading","folderPath":"folders/Systems/Room Fading.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Save and Load","folderPath":"folders/Systems/Save and Load.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Text","folderPath":"folders/Systems/Text.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Follower","folderPath":"folders/Systems/Follower.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"object_interactions.txt","CopyToMask":3035426170322551022,"filePath":"datafiles/english",},
@@ -100,6 +101,7 @@
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"spr_obj_door_wide","path":"sprites/spr_obj_door_wide/spr_obj_door_wide.yy",},},
     {"id":{"name":"snd_dialog_sans","path":"sounds/snd_dialog_sans/snd_dialog_sans.yy",},},
+    {"id":{"name":"scr_camera_functions","path":"scripts/scr_camera_functions/scr_camera_functions.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"font_arial","path":"fonts/font_arial/font_arial.yy",},},
     {"id":{"name":"scr_cutscene_functions","path":"scripts/scr_cutscene_functions/scr_cutscene_functions.yy",},},

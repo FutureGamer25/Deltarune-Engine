@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Followers",
-    "path": "folders/General/Followers.yy",
+    "name": "Follower",
+    "path": "folders/Systems/Follower.yy",
   },
   "parentObjectId": null,
   "persistent": false,

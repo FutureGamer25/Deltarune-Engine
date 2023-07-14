@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_follower_functions",
+  "name": "scr_camera_functions",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Follower",
-    "path": "folders/Systems/Follower.yy",
+    "name": "Functions",
+    "path": "folders/Functions.yy",
   },
 }

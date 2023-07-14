@@ -27,9 +27,9 @@ callThread = function(thread) {
 		if is_undefined(param) {
 			with parentScope func();
 		} else {
+			var new_param = [];
 			if useStringVariables {
 				#region get v: variables
-				var new_param = [];
 				for (var i=array_length(param)-1; i>=0; i--) {
 					var par = param[i]
 					if is_string(par) if string_copy(par, 1, 2) = "v:" {

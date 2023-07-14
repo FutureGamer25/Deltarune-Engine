@@ -151,7 +151,7 @@ draw = function(_x, _y, sep = -1, w = -1, scale = 1) {
 		
 		if (i >= wrapPos) { //go to new line
 			lineIndex ++;
-			var wrapPos = newlinePos[lineIndex];
+			wrapPos = newlinePos[lineIndex];
 			xx = halign * lineWidth[lineIndex];
 			yy += lineHeight;
 			

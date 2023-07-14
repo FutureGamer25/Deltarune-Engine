@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Followers",
-    "path": "folders/General/Followers.yy",
+    "name": "Follower",
+    "path": "folders/Systems/Follower.yy",
   },
 }

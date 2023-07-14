@@ -1,14 +1,3 @@
-function follower_reset() { //set to player position
-	with obj_follower_controller {
-		data = [];
-		data[0] = new __follower_data_obj(global.follower_player);
-		
-		for (var i=0; i<folCount; i++) {
-			follower[i].init(i);
-		}
-	}
-}
-
 function follower_add(obj = obj_follower) {
 	if (!instance_exists(obj_follower_controller)) {
 		instance_create_depth(0, 0, 0, obj_follower_controller);
@@ -53,6 +42,17 @@ function follower_remove_index(index) {
 		}
 		
 		return true;
+	}
+}
+
+function follower_reset() { //set to player position
+	with obj_follower_controller {
+		data = [];
+		data[0] = new __follower_data_obj(global.follower_player);
+		
+		for (var i=0; i<folCount; i++) {
+			follower[i].init(i);
+		}
 	}
 }
 
@@ -113,6 +113,12 @@ function follower_path() { //create snake at current follower positions
 function follower_get_pos(follower_index) {
 	with obj_follower_controller {
 		return playerPos - min(array_length(data) - 1, (follower_index + 1) * folSpacing);
+	}
+}
+
+function follower_get_player_pos() {
+	with obj_follower_controller {
+		return playerPos;
 	}
 }
 

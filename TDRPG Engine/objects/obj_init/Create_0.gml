@@ -1,9 +1,10 @@
 randomize();
 
+global.dt = 1 / room_speed;
+
 #region window
 //remember to set the size of rm_init to the scaled dimensions
 //otherwise the screen may look weird for a second
-global.dt = 1 / room_speed;
 global.view_width = 320;
 global.view_height = 240;
 global.view_scale = 2;
