@@ -9,7 +9,7 @@
   ],
   "parent": {
     "name": "Test Stuff",
-    "path": "folders/General/Test Stuff.yy",
+    "path": "folders/Test Stuff.yy",
   },
   "parentObjectId": {
     "name": "obj_basic_interactable",

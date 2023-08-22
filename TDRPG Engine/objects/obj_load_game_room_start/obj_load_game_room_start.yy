@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Save and Load",
-    "path": "folders/Systems/Save and Load.yy",
+    "path": "folders/System/Save and Load.yy",
   },
   "parentObjectId": null,
   "persistent": true,

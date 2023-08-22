@@ -130,7 +130,7 @@ __text_type_func("/sound", function(inst) {
 __text_set_alias("/sound", "/snd");
 
 __text_type_func("speed", function(inst, param) {
-	inst.typeSpeed = room_speed / real(param[0]);
+	inst.typeSpeed = game_get_speed(gamespeed_fps) / real(param[0]);
 });
 __text_set_alias("speed", "spd");
 
@@ -161,7 +161,7 @@ __text_draw_func("scared", function(inst) {
 
 #region random
 __text_type_func("wait", function(inst, param) {
-	inst.typeTimer += real(param[0]) * inst.typeSpeed * room_speed;
+	inst.typeTimer += real(param[0]) * inst.typeSpeed * game_get_speed(gamespeed_fps);
 });
 
 __text_draw_func("sprite", function(inst, param) {
@@ -169,7 +169,8 @@ __text_draw_func("sprite", function(inst, param) {
 	if (spr = -1) return;
 	with inst {
 		var spd = sprite_get_speed(spr);
-		if (sprite_get_speed_type(spr) = spritespeed_framespersecond) spd /= room_speed;
+		//feather disable once all
+		if (sprite_get_speed_type(spr) = spritespeed_framespersecond) spd /= game_get_speed(gamespeed_fps);
 		var subimg = (spd * frame) % sprite_get_number(spr);
 		var w = sprite_get_width(spr) * drawScale;
 		var h = sprite_get_height(spr) * drawScale;

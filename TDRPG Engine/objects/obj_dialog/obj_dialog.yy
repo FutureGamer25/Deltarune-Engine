@@ -13,7 +13,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Dialog",
-    "path": "folders/Systems/Dialog.yy",
+    "path": "folders/System/Dialog.yy",
   },
   "parentObjectId": null,
   "persistent": false,

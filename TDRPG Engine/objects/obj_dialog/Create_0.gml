@@ -19,6 +19,10 @@ state = "text";
 	choice
 */
 
+optionSelected = 0;
+optionKey = [];
+optionText = [];
+
 textObj = text_create();
 
 #region functions
@@ -61,7 +65,6 @@ next_page = function() {
 			break;
 		case "sprite":
 			var spr = asset_get_index(param);
-			if (spr = -1) spr = noone;
 			sprite_index = spr;
 			break;
 		case "character":
@@ -69,7 +72,7 @@ next_page = function() {
 			character = global.dialog_data.char[$ param];
 			if is_undefined(character) {
 				textObj.set_sound(sound);
-				sprite_index = noone;
+				sprite_index = -1;
 			} else {
 				textObj.set_sound(character.sound);
 				charFace = character.defaultFace;
@@ -89,12 +92,11 @@ next_page = function() {
 			optionText = [];
 			break;
 		case "option":
+			var key = undefined;
 			if (string_char_at(param, 1) = "[") {
 				var endPos = string_pos_ext("]", param, 3);
-				var key = string_copy(param, 2, endPos - 2);
+				key = string_copy(param, 2, endPos - 2);
 				param = string_trim_start(string_delete(param, 1, endPos), [" ", "\t"]);
-			} else {
-				var key = undefined;
 			}
 			
 			array_push(optionKey, key);

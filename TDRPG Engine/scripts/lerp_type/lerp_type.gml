@@ -142,6 +142,7 @@ function lerp_type(val1, val2, amount, interpolate_type) {
 		break;
 	case 3: //reverse-normal
 		amount = 2 * amount - 1;
+		//feather disable once all
 		var s = sign(amount);
 		amount = 0.5 * interp[1](s * amount) * s + 0.5;
 		break;

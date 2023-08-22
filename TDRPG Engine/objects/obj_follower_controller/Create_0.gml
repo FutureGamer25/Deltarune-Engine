@@ -1,5 +1,5 @@
 folCount = 0;
-folSpacing = ceil(global.follower_delay * room_speed);
+folSpacing = ceil(global.follower_delay * game_get_speed(gamespeed_fps));
 playerPos = 0;
 follower = [];
 data = [];

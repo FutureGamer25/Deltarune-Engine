@@ -31,8 +31,9 @@ callThread = function(thread) {
 			if useStringVariables {
 				#region get v: variables
 				for (var i=array_length(param)-1; i>=0; i--) {
-					var par = param[i]
+					var par = param[i];
 					if is_string(par) if string_copy(par, 1, 2) = "v:" {
+						//feather disable once all
 						par = variable_struct_get(parentScope, string_delete(par, 1, 2));
 					}
 					new_param[i] = par;

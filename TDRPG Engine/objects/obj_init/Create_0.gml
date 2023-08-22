@@ -1,6 +1,5 @@
 randomize();
-
-global.dt = 1 / room_speed;
+global.dt = 1 / game_get_speed(gamespeed_fps);
 
 #region window
 //remember to set the size of rm_init to the scaled dimensions
@@ -8,16 +7,10 @@ global.dt = 1 / room_speed;
 global.view_width = 320;
 global.view_height = 240;
 global.view_scale = 2;
-var width = global.view_width;
-var height = global.view_height;
-var scale = global.view_scale;
-
-window_set_size(width * scale, height * scale);
-window_center();
-surface_resize(application_surface, width * scale, height * scale);
-display_set_gui_size(width, height);
+game_set_resolution(global.view_width, global.view_height, global.view_scale);
 #endregion
 
+lang_set_newline("##");
 lang_set_directory("english");
 lang_file_load("object_interactions.txt");
 
@@ -63,7 +56,6 @@ dialog_character("jeff", sprite_2, sprite_0, snd_dialog_sans, {
 #endregion
 
 instance_create_depth(0, 0, 0, obj_layer_sort_depth);
-
 instance_create_depth(0, 0, 0, obj_game);
 
 room_goto_next();

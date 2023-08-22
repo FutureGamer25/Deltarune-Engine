@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Cutscenes",
-    "path": "folders/Systems/Cutscenes.yy",
+    "path": "folders/System/Animation/Cutscenes.yy",
   },
 }

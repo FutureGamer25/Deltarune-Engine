@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "lerp_to",
+  "name": "game_set_resolution",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

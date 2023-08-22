@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Functions",
-    "path": "folders/Functions.yy",
+    "path": "folders/System/Functions.yy",
   },
 }

@@ -11,6 +11,7 @@ function instance_pause(_id, pause = true) {
 				}
 			}
 		} else {
+			//feather disable once all
 			if (!instance_exists(_id)) return;
 			if (!asset_has_tags(_id.object_index, "pause", asset_object)) return;
 			_id.set_pause(pause);

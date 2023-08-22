@@ -1,9 +1,12 @@
-defaultSpeed = room_speed / 30;
+defaultSpeed = game_get_speed(gamespeed_fps) / 30;
 defaultStyle = "";
 defaultNewlineStr = "";
 
-defaultSound = undefined;
+defaultSound = -1;
 playSound = false;
+
+text = "";
+progress = 0;
 
 frame = 0;
 
@@ -41,6 +44,7 @@ set_text = function(str = "") {
 		array_delete(params, 0, 1);
 		
 		var func = global.text_data.func[$ command];
+		var newStr = "";
 		
 		switch typeof(func) {
 		case "undefined":
@@ -55,13 +59,13 @@ set_text = function(str = "") {
 			funcParams[index] = params;
 			
 			if is_method(init) init(id, params);
-			var newStr = "\a" + string_format(index, 2, 0);
+			newStr = "\a" + string_format(index, 2, 0);
 			break;
 		case "method": //func variable
-			var newStr = func(id, params);
+			newStr = func(id, params);
 			break;
 		default: //variable
-			var newStr = func;
+			newStr = func;
 			break;
 		}
 		
@@ -99,7 +103,7 @@ set_sound = function(sound) {
 }
 
 set_speed = function(spd) {
-	defaultSpeed = room_speed / spd;
+	defaultSpeed = game_get_speed(gamespeed_fps) / spd;
 	typeSpeed = defaultSpeed;
 }
 

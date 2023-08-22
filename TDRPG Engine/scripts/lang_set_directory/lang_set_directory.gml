@@ -22,6 +22,6 @@ function lang_set_directory(name = "") {
 
 global.lang_directory = working_directory;
 global.lang_directory_name = "";
-global.lang_newline_str = "##";
+global.lang_newline_str = "#";
 global.lang_text = ds_map_create();
 global.lang_files = ds_map_create();

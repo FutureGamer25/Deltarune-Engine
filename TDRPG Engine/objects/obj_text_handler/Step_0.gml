@@ -10,7 +10,7 @@ while (progress < progressMax && typeTimer <= 0) {
 	progress ++;
 	var char = string_char_at(text, progress);
 	
-	if (!is_undefined(typeSound)) {
+	if (audio_exists(typeSound)) {
 		if (char != "\a" && string_pos(char, global.text_data.silent) = 0) {
 			playSound = true;
 		}
@@ -29,7 +29,7 @@ while (progress < progressMax && typeTimer <= 0) {
 	case ".":
 	case "!":
 	case "?":
-		typeTimer += typeSpeed + room_speed / 5;
+		typeTimer += typeSpeed + game_get_speed(gamespeed_fps) / 5;
 		break;
 	default:
 		typeTimer += typeSpeed;
@@ -37,7 +37,7 @@ while (progress < progressMax && typeTimer <= 0) {
 	}
 }
 
-if (!is_undefined(typeSound)) {
+if (audio_exists(typeSound)) {
 	if playSound {
 		playSound = false;
 		var snd = typeSound;

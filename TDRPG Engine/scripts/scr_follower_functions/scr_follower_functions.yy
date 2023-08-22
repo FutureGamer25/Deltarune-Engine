@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Follower",
-    "path": "folders/Systems/Follower.yy",
+    "path": "folders/System/Follower.yy",
   },
 }

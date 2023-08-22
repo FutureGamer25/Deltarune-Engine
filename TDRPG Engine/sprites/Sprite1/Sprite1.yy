@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "Test Stuff",
-    "path": "folders/General/Test Stuff.yy",
+    "path": "folders/Test Stuff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

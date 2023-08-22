@@ -81,14 +81,18 @@ function follower_path() { //create snake at current follower positions
 		var pos1 = 0;
 		var x1 = obj_player.x;
 		var y1 = obj_player.y;
+		var x2 = x1;
+		var y2 = y1;
+		var move_x = 0;
+		var move_y = 0;
 		
 		for (var i=0; i<folCount; i++) {
 			var fol = follower[i];
 			var pos2 = (i + 1) * folSpacing;
-			var x2 = fol.x;
-			var y2 = fol.y;
-			var move_x = (x1 - x2) / folSpacing;
-			var move_y = (y1 - y2) / folSpacing;
+			x2 = fol.x;
+			y2 = fol.y;
+			move_x = (x1 - x2) / folSpacing;
+			move_y = (y1 - y2) / folSpacing;
 			
 			for (var j=pos1; j<pos2; j++) {
 				var n = (j - pos1) / folSpacing;
@@ -102,7 +106,7 @@ function follower_path() { //create snake at current follower positions
 			y1 = y2;
 		}
 		
-		data[j + 1] = new __follower_data_pos(_x, _y, move_x, move_y);
+		data[folCount * folSpacing + 1] = new __follower_data_pos(x2, y2, move_x, move_y);
 	}
 }
 

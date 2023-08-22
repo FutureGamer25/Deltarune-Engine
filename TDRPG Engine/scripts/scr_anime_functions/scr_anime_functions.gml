@@ -72,6 +72,7 @@ function __anime_class(start_val) constructor {
 	callback = function() {
 		frame ++;
 		var val = frame / maxFrames;
+		//feather disable once all
 		func(lerp_type(x1, x2, val, type));
 		if (val >= 1) {
 			if (!nextData()) stop();

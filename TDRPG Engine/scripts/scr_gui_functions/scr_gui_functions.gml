@@ -1,3 +1,5 @@
+//make draw events behave like draw gui events
+
 function draw_set_gui() {
 	static oldWidth = 1;
 	static oldHeight = 1;

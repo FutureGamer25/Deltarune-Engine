@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Room Fading",
-    "path": "folders/Systems/Room Fading.yy",
+    "path": "folders/System/Room Fading.yy",
   },
 }

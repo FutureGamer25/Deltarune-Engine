@@ -9,7 +9,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Follower",
-    "path": "folders/Systems/Follower.yy",
+    "path": "folders/System/Follower.yy",
   },
   "parentObjectId": null,
   "persistent": false,

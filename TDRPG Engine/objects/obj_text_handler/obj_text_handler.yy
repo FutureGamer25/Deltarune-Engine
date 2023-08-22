@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Text",
-    "path": "folders/Systems/Text.yy",
+    "path": "folders/System/Text.yy",
   },
   "parentObjectId": null,
   "persistent": false,

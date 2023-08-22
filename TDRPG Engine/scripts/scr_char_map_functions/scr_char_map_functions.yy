@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Systems",
-    "path": "folders/Systems.yy",
+    "name": "Functions",
+    "path": "folders/System/Functions.yy",
   },
 }

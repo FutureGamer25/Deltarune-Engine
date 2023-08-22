@@ -76,6 +76,7 @@ function char_sprite_update(char_sprite) {
 	
 	var state = char.stateStruct[$ char.state];
 	if is_array(state) {
+		//TODO: don't use modulo
 		var angle = modulo(darctan2(char.faceY, char.faceX), 360);
 		par.sprite_index = state[round(angle / 90)];
 	} else if is_real(state) {

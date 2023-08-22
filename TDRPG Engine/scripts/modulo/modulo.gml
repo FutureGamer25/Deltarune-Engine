@@ -1,6 +1,3 @@
-///@func modulo(x,n)
-///@param x
-///@param n
-function modulo(_x, n) {
-  return _x - floor(_x / n) * n;
+function modulo(x, n) {
+  return x - floor(x / n) * n;
 }

@@ -97,9 +97,10 @@ function scene_goto_if(label_name, condition_func) {
 
 #region branches
 function scene_branch_start() {
+	var thread = undefined;
 	with global.cutscene_current {
 		useThreads = true;
-		var thread = newThread();
+		thread = newThread();
 		
 		scene_func(function(thread) {
 			thread.sceneIndex = 0;
@@ -109,7 +110,6 @@ function scene_branch_start() {
 		currentThread = thread;
 		array_push(threadStack, thread);
 	}
-	
 	return thread;
 }
 

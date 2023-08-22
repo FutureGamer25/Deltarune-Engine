@@ -1,3 +1,4 @@
+//feather disable once all
 if (!room_exists(new_room)) exit;
 
 if (!changeRoom) {
