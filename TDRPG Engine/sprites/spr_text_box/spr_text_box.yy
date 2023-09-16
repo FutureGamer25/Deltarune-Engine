@@ -49,7 +49,7 @@
   "origin": 0,
   "parent": {
     "name": "Dialog",
-    "path": "folders/System/Dialog.yy",
+    "path": "folders/General/Dialog.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

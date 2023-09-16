@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Cutscenes",
-    "path": "folders/System/Animation/Cutscenes.yy",
+    "path": "folders/TDRPG Engine/Systems/Animation/Cutscenes.yy",
   },
 }

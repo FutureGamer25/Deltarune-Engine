@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_dialog_functions",
+  "name": "draw_sprite_bounds",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Dialog",
-    "path": "folders/General/Dialog.yy",
+    "name": "Functions",
+    "path": "folders/TDRPG Engine/Systems/Functions.yy",
   },
 }

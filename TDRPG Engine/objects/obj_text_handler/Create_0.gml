@@ -22,9 +22,14 @@ set_text = function(str = "") {
 		var char = string_char_at(text, i);
 		
 		if (char = "\n") {
-			show_message(newlineStr)
 			text = string_insert(newlineStr, text, i + 1);
 			i += string_length(newlineStr);
+			continue;
+		}
+		
+		if (char = "\a") { //can't have any of these in there
+			text = string_delete(text, i, 1);
+			i --;
 			continue;
 		}
 		

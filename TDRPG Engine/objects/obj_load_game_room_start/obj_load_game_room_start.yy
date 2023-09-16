@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Save and Load",
-    "path": "folders/System/Save and Load.yy",
+    "name": "Save and Load Game",
+    "path": "folders/General/Save and Load Game.yy",
   },
   "parentObjectId": null,
   "persistent": true,

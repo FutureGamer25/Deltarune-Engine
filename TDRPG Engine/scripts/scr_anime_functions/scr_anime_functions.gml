@@ -1,3 +1,5 @@
+//feather disable all
+//inconsistent errors showing up
 function create_anime(start_val) {
 	var a = new __anime_class(start_val);
 	a.id = weak_ref_create(a);

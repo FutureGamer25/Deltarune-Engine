@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Follower",
-    "path": "folders/System/Follower.yy",
+    "path": "folders/TDRPG Engine/Systems/Follower.yy",
   },
 }

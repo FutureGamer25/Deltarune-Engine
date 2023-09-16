@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Save and Load",
-    "path": "folders/System/Save and Load.yy",
+    "name": "Systems",
+    "path": "folders/TDRPG Engine/Systems.yy",
   },
 }

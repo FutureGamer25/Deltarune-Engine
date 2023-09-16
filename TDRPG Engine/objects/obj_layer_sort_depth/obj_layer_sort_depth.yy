@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "General",
-    "path": "folders/General.yy",
+    "name": "Depth Sorting",
+    "path": "folders/TDRPG Engine/Systems/Depth Sorting.yy",
   },
   "parentObjectId": null,
   "persistent": true,

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Language",
-    "path": "folders/System/Language.yy",
+    "path": "folders/TDRPG Engine/Systems/Language.yy",
   },
 }

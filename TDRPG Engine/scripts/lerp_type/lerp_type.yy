@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Animation",
-    "path": "folders/System/Animation.yy",
+    "path": "folders/TDRPG Engine/Systems/Animation.yy",
   },
 }

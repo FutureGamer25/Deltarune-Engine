@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Functions",
-    "path": "folders/System/Functions.yy",
+    "name": "Systems",
+    "path": "folders/TDRPG Engine/Systems.yy",
   },
 }

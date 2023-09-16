@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_dialog_functions",
+  "name": "scr_text_init",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Dialog",
-    "path": "folders/General/Dialog.yy",
+    "name": "Text",
+    "path": "folders/TDRPG Engine/Systems/Text.yy",
   },
 }

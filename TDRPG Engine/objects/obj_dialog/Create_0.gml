@@ -5,7 +5,7 @@ pageIndex = -1;
 
 color = c_white;
 font = global.fontLarge;
-sound = undefined;
+sound = -1;
 character = undefined;
 charFace = noone;
 charTalk = noone;

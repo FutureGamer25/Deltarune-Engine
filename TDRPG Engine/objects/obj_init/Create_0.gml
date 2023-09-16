@@ -55,7 +55,7 @@ dialog_character("jeff", sprite_2, sprite_0, snd_dialog_sans, {
 });
 #endregion
 
-instance_create_depth(0, 0, 0, obj_layer_sort_depth);
+depth_sort_set_layer("depth");
 instance_create_depth(0, 0, 0, obj_game);
 
 room_goto_next();

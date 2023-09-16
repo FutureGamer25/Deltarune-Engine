@@ -9,43 +9,37 @@ function char_map_default(char_map, default_state) {
 	char_map.defaultState = default_state;
 }
 
+function char_map_1dir(char_map, state_name, sprite) {
+	char_map.state[$ state_name] = [sprite];
+}
+
 function char_map_4dir(char_map, state_name, up, down, left, right) {
 	char_map.state[$ state_name] = [right, down, left, up];
 }
 
-function char_map_1dir(char_map, state_name, sprite) {
-	char_map.state[$ state_name] = sprite;
+function char_map_8dir(char_map, state_name, right, up_right, up, up_left, left, down_left, down, down_right) {
+	char_map.state[$ state_name] = [right, down_right, down, down_left, left, up_left, up, up_right];
 }
 
 function char_sprite_create(char_map, inst_id = id) {
 	var defState = char_map.defaultState;
 	return {
 		parent : inst_id,
-		faceX : 0,
-		faceY : 1,
+		angle : 90,
+		dirX : 0,
+		dirY : 1,
 		state : defState,
-		prevState : defState,
 		targetState : defState,
+		prevState : defState,
 		delayFrame : 0,
 		stateStruct : char_map.state
 	};
 }
 
 function char_sprite_dir(char_sprite, dir_x, dir_y) {
-	//currently only supports 4dir
-	var scl = max(abs(dir_x), abs(dir_y));
-	if (scl = 0) return;
-	scl = 1 / (1.5 * scl);
-	dir_x = round(dir_x * scl);
-	dir_y = round(dir_y * scl);
-	
-	if (dir_x != 0 && dir_y != 0) {
-		if (dir_x = char_sprite.faceX || dir_y = char_sprite.faceY) return;
-		dir_x = 0;
-	}
-	
-	char_sprite.faceX = dir_x;
-	char_sprite.faceY = dir_y;
+	if (dir_x = 0 && dir_y = 0) return;
+	char_sprite.dirX = dir_x;
+	char_sprite.dirY = dir_y;
 }
 
 function char_sprite_state(char_sprite, state_name) {
@@ -63,6 +57,8 @@ function char_sprite_state_delay(char_sprite, state_name) {
 function char_sprite_update(char_sprite) {
 	var char = char_sprite;
 	var par = char.parent;
+	
+	#region update state
 	if (char.state != char.targetState) {
 		if (char.delayFrame != floor(par.image_index)) {
 			char.state = char.targetState;
@@ -73,18 +69,31 @@ function char_sprite_update(char_sprite) {
 		char.prevState = char.state;
 		par.image_index = 0;
 	}
+	#endregion
 	
+	#region update angle and sprite
 	var state = char.stateStruct[$ char.state];
-	if is_array(state) {
-		//TODO: don't use modulo
-		var angle = modulo(darctan2(char.faceY, char.faceX), 360);
-		par.sprite_index = state[round(angle / 90)];
-	} else if is_real(state) {
-		par.sprite_index = state;
-	} else {
+	if (!is_array(state)) {
 		par.sprite_index = -1;
 		return;
 	}
+	
+	var num = array_length(state);
+	if (num = 1) {
+		char.angle = 0;
+		par.sprite_index = state[0];
+		return;
+	}
+	
+	var angle = arctan2(char.dirY, char.dirX) * num / (2 * pi) + num;
+	var index = round(angle) % num;
+	if ((index * 360 != char.angle * num) && abs(frac(angle) * 2 - 1) <= 0.2) {
+		var midAng = (floor(angle) + 0.5) * 360 / num + 360;
+		index = ((midAng - char.angle) % 360 < 180 ? floor(angle) : ceil(angle)) % num;
+	}
+	char.angle = index * 360 / num;
+	par.sprite_index = state[index];
+	#endregion
 }
 
 function char_sprite_set_map(char_sprite, char_map) {
@@ -100,9 +109,9 @@ function char_sprite_get_state(char_sprite) {
 }
 
 function char_sprite_get_x(char_sprite) {
-	return char_sprite.faceX;
+	return dcos(char_sprite.angle);
 }
 
 function char_sprite_get_y(char_sprite) {
-	return char_sprite.faceY;
+	return dsin(char_sprite.angle);
 }

@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Room Fading",
-    "path": "folders/System/Room Fading.yy",
+    "path": "folders/TDRPG Engine/Systems/Room Fading.yy",
   },
 }

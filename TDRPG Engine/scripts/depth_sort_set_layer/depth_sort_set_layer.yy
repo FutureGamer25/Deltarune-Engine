@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_dialog_functions",
+  "name": "depth_sort_set_layer",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Dialog",
-    "path": "folders/General/Dialog.yy",
+    "name": "Depth Sorting",
+    "path": "folders/TDRPG Engine/Systems/Depth Sorting.yy",
   },
 }

@@ -1,3 +1,13 @@
+#region setup
+function follower_set_delay(seconds) {
+	global.follower_delay = seconds;
+}
+
+function follower_set_player(obj) {
+	global.follower_player = obj;
+}
+#endregion
+
 function follower_add(obj = obj_follower) {
 	if (!instance_exists(obj_follower_controller)) {
 		instance_create_depth(0, 0, 0, obj_follower_controller);
