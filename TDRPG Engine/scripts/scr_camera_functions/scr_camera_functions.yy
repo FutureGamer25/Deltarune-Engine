@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Functions",
-    "path": "folders/TDRPG Engine/Systems/Functions.yy",
+    "path": "folders/TDRPG Engine/Functions.yy",
   },
 }

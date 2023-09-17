@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "get_input",
+  "name": "scr_inventory_functions",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Functions",
-    "path": "folders/TDRPG Engine/Functions.yy",
+    "name": "Systems",
+    "path": "folders/TDRPG Engine/Systems.yy",
   },
 }

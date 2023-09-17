@@ -1,44 +1,47 @@
 #region item constructors
-/*function __item() constructor { //optional parent
-	static select_member = function(_method) {
-		
+function __item(_name, _desc) constructor {
+	name = _name;
+	desc = _desc;
+	type = "basic";
+	static remove_self = function(struct) {
+		var _x = struct.x;
+		var _y = struct.y;
+		//remove from inventory
 	}
-}*/
-
-//function __item_heal(_hp) : __item() constructor {
-function __item_heal(_hp) constructor {
-	static run = function() {
-		select_member(heal);
-		//start member selection and supply heal function
-	}
-	static heal = function(member) {
-		//heal member
-	}
-	hp = _hp;
 }
 
-function __item_heal_all(_hp) constructor {
-	static run = function() {
-		//heal everyone
-	}
-	static heal = function(member) {
-		//heal member
-	}
+function __item_heal(_name, _desc, _hp) : __item(_name, _desc) constructor {
 	hp = _hp;
+	type = "heal";
+	static run = function(struct) {
+		var member = struct.member;
+		//heal member
+		remove_self(struct);
+	}
+}
+
+function __item_heal_all(_name, _desc, _hp) : __item(_name, _desc) constructor {
+	hp = _hp;
+	type = "heal_all";
+	static run = function(struct) {
+		//heal everyone
+		remove_self(struct);
+	}
 }
 #endregion
 
 #region item functions
-function item_run(item) {
-	item.run();
+//item_run("candy", {x: 1, y: 2, member: 0});
+function item_run(item_key, param_struct = {}) {
+	global.items[$ item_key].run(param_struct);
 }
 
-function item_get(name) {
-	return global.items[$ name];
+function item_struct(item_key) {
+	return global.items[$ item_key];
 }
 #endregion
 
 global.items = {
-	"candy" : new __item_heal(5),
-	"new_item" : new __item_heal_all(22)
+	"candy" : new __item_heal("Candy", "Good for the soul.", 5),
+	"new_item" : new __item_heal_all("Unnamed", "Undescribable.", 10)
 };
