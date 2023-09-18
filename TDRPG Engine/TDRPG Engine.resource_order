@@ -22,12 +22,12 @@
     {"name":"Systems","order":1,"path":"folders/TDRPG Engine/Systems.yy",},
     {"name":"Animation","order":4,"path":"folders/TDRPG Engine/Systems/Animation.yy",},
     {"name":"Cutscenes","order":2,"path":"folders/TDRPG Engine/Systems/Animation/Cutscenes.yy",},
+    {"name":"Depth Sorting","order":8,"path":"folders/TDRPG Engine/Systems/Depth Sorting.yy",},
     {"name":"Follower","order":7,"path":"folders/TDRPG Engine/Systems/Follower.yy",},
     {"name":"Language","order":5,"path":"folders/TDRPG Engine/Systems/Language.yy",},
     {"name":"Room Fading","order":6,"path":"folders/TDRPG Engine/Systems/Room Fading.yy",},
     {"name":"Text","order":3,"path":"folders/TDRPG Engine/Systems/Text.yy",},
     {"name":"Test Stuff","order":2,"path":"folders/Test Stuff.yy",},
-    {"name":"Depth Sorting","order":8,"path":"folders/TDRPG Engine/Systems/Depth Sorting.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"scr_pause_functions","order":5,"path":"scripts/scr_pause_functions/scr_pause_functions.yy",},
