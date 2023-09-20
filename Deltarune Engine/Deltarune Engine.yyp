@@ -125,6 +125,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_font_large","path":"sprites/spr_font_large/spr_font_large.yy",},},
     {"id":{"name":"obj_exit_C","path":"objects/obj_exit_C/obj_exit_C.yy",},},
+    {"id":{"name":"game_get_max_scale","path":"scripts/game_get_max_scale/game_get_max_scale.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"spr_obj_exit_A","path":"sprites/spr_obj_exit_A/spr_obj_exit_A.yy",},},
     {"id":{"name":"spr_player_walk_right","path":"sprites/spr_player_walk_right/spr_player_walk_right.yy",},},
@@ -136,6 +137,7 @@
     {"id":{"name":"scr_save_and_load_game","path":"scripts/scr_save_and_load_game/scr_save_and_load_game.yy",},},
     {"id":{"name":"obj_exit_B","path":"objects/obj_exit_B/obj_exit_B.yy",},},
     {"id":{"name":"snd_dialog_harsh","path":"sounds/snd_dialog_harsh/snd_dialog_harsh.yy",},},
+    {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_exit_A","path":"objects/obj_exit_A/obj_exit_A.yy",},},
     {"id":{"name":"spr_player_up","path":"sprites/spr_player_up/spr_player_up.yy",},},
@@ -148,6 +150,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
