@@ -20,3 +20,5 @@ set_pause = function(_pause) {
 	running = false;
 	char_sprite_state_delay_frame(charSprite, "stand");
 }
+
+can_menu = true;

@@ -3,6 +3,7 @@ if (!pause) {
 
 var horizontal = get_input("horizontal");
 var vertical = get_input("vertical");
+var menu = get_input_pressed("cancel");
 var run = get_input("cancel");
 var interact = get_input_pressed("confirm");
 
@@ -67,6 +68,11 @@ if interact {
 			with inst event_user(0);
 			break;
 		}
+	}
+}else if menu {
+	if !instance_exists(obj_menu_light) && can_menu{
+		instance_create_depth(0,0,0,obj_menu_light);
+		can_menu = false;
 	}
 }
 #endregion

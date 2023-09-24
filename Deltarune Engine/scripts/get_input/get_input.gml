@@ -1,7 +1,11 @@
 function get_input(verb) {
 	switch (verb) {
+	case "horizontal_pressed":
+		return keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
 	case "horizontal":
 		return keyboard_check(vk_right) - keyboard_check(vk_left);
+	case "vertical_pressed":
+		return keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 	case "vertical":
 		return keyboard_check(vk_down) - keyboard_check(vk_up);
 	case "confirm":
