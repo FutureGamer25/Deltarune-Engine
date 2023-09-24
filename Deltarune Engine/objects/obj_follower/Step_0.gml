@@ -10,7 +10,8 @@ if (newPos > pos) {
 	char_sprite_dir(charSprite, data.dirX, data.dirY);
 	char_sprite_state(charSprite, data.state);
 } else {
-	image_speed = 1;
+	image_index = 0;
+	image_speed = 0;
 	char_sprite_state_delay_frame(charSprite, "stand");
 }
 

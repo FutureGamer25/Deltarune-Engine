@@ -1,6 +1,6 @@
 pos = 0;
 index = 0;
-charSprite = char_sprite_create(global.charMapPlayer);
+charSprite = char_sprite_create(global.charMapDarkSusie);
 
 init = function(follower_index) {
 	index = follower_index;

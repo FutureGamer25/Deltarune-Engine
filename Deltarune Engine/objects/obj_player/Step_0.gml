@@ -41,8 +41,11 @@ var moving = (moveX != 0 || moveY != 0);
 
 #region sprites
 if moving {
+	image_speed = 1;
 	char_sprite_state(charSprite, "walk");
 } else {
+	image_index = 0;
+	image_speed = 0;
 	char_sprite_state_delay_frame(charSprite, "stand");
 }
 

@@ -2,7 +2,7 @@ var borderLeft = 8;
 var borderRight = 8;
 var borderTop = 8;
 
-draw_sprite_stretched(spr_text_box, 0, x, y, width, height);
+draw_sprite_stretched(spr_textbox_dark, textbox_anim, x, y, width, height);
 
 if (!is_undefined(character)) {
 	if (textObj.is_finished()) {

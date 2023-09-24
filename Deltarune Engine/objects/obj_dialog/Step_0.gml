@@ -3,6 +3,8 @@ if (!checkInputs) exit;
 var confirm = get_input_pressed("confirm");
 var cancel = get_input_pressed("cancel");
 
+textbox_anim += .1;
+
 if (state = "text") {
 	if (textObj.is_finished()) {
 		if confirm {

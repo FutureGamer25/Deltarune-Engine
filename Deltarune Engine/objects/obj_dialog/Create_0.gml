@@ -2,6 +2,7 @@ width = 100;
 height = 100;
 pages = [""];
 pageIndex = -1;
+textbox_anim = 0;
 
 color = c_white;
 font = global.fontLarge;

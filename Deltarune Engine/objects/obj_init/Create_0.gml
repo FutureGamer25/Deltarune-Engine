@@ -16,10 +16,58 @@ lang_file_load("object_interactions.txt");
 
 #region overworld sprite maps
 var map = char_map_create();
-global.charMapPlayer = map;
+global.charMapLightKris = map;
 char_map_default(map, "stand");
-char_map_4dir(map, "stand", spr_player_up, spr_player_down, spr_player_left, spr_player_right);
-char_map_4dir(map, "walk", spr_player_walk_up, spr_player_walk_down, spr_player_walk_left, spr_player_walk_right);
+char_map_4dir(map, "stand",	spr_kris_light_up,		spr_kris_light_down,
+							spr_kris_light_left,	spr_kris_light_right);
+char_map_4dir(map, "walk",	spr_kris_light_up,		spr_kris_light_down,
+							spr_kris_light_left,	spr_kris_light_right);
+
+var map = char_map_create();
+global.charMapDarkKris = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_kris_dark_up,		spr_kris_dark_down,
+							spr_kris_dark_left,		spr_kris_dark_right);
+char_map_4dir(map, "walk",	spr_kris_dark_up,		spr_kris_dark_down,
+							spr_kris_dark_left,		spr_kris_dark_right);
+
+var map = char_map_create();
+global.charMapLightSusie = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_susie_light_up,		spr_susie_light_down,
+							spr_susie_light_left,	spr_susie_light_right);
+char_map_4dir(map, "walk",	spr_susie_light_up,		spr_susie_light_down,
+							spr_susie_light_left,	spr_susie_light_right);
+
+var map = char_map_create();
+global.charMapDarkSusie = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_susie_dark_up,		spr_susie_dark_down,
+							spr_susie_dark_left,	spr_susie_dark_right);
+char_map_4dir(map, "walk",	spr_susie_dark_up,		spr_susie_dark_down,
+							spr_susie_dark_left,	spr_susie_dark_right);
+
+var map = char_map_create();
+global.charMapCh1Ralsei = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_ralsei_ch1_up,		spr_ralsei_ch1_down,
+							spr_ralsei_ch1_left,	spr_ralsei_ch1_right);
+char_map_4dir(map, "walk",	spr_ralsei_ch1_up,		spr_ralsei_ch1_down,
+							spr_ralsei_ch1_left,	spr_ralsei_ch1_right);
+var map = char_map_create();
+global.charMapCh2Ralsei = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_ralsei_ch2_up,		spr_ralsei_ch2_down,
+							spr_ralsei_ch2_left,	spr_ralsei_ch2_right);
+char_map_4dir(map, "walk",	spr_ralsei_ch2_up,		spr_ralsei_ch2_down,
+							spr_ralsei_ch2_left,	spr_ralsei_ch2_right);
+
+
+
+
+
+
+
 #endregion
 
 #region dialog and text stuff
