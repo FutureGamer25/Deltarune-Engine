@@ -26,6 +26,8 @@ optionText = [];
 
 textObj = text_create();
 
+text_set_newline_str(textObj, "* ");
+
 #region functions
 next_page = function() {
 	while ((++ pageIndex) < array_length(pages)) {

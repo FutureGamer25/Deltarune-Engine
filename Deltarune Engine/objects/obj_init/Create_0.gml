@@ -6,7 +6,8 @@ global.dt = 1 / game_get_speed(gamespeed_fps);
 //otherwise the screen may look weird for a second
 global.view_width = 320;
 global.view_height = 240;
-global.view_scale = game_get_max_scale(global.view_width, global.view_height);
+//global.view_scale = game_get_max_scale(global.view_width, global.view_height);
+global.view_scale = 2; //TODO: switch back
 game_set_resolution(global.view_width, global.view_height, global.view_scale);
 #endregion
 
@@ -48,19 +49,12 @@ char_map_4dir(map, "walk",	spr_susie_dark_up,		spr_susie_dark_down,
 							spr_susie_dark_left,	spr_susie_dark_right);
 
 var map = char_map_create();
-global.charMapCh1Ralsei = map;
+global.charMapRalsei = map;
 char_map_default(map, "stand");
-char_map_4dir(map, "stand",	spr_ralsei_ch1_up,		spr_ralsei_ch1_down,
-							spr_ralsei_ch1_left,	spr_ralsei_ch1_right);
-char_map_4dir(map, "walk",	spr_ralsei_ch1_up,		spr_ralsei_ch1_down,
-							spr_ralsei_ch1_left,	spr_ralsei_ch1_right);
-var map = char_map_create();
-global.charMapCh2Ralsei = map;
-char_map_default(map, "stand");
-char_map_4dir(map, "stand",	spr_ralsei_ch2_up,		spr_ralsei_ch2_down,
-							spr_ralsei_ch2_left,	spr_ralsei_ch2_right);
-char_map_4dir(map, "walk",	spr_ralsei_ch2_up,		spr_ralsei_ch2_down,
-							spr_ralsei_ch2_left,	spr_ralsei_ch2_right);
+char_map_4dir(map, "stand",	spr_ralsei_up,		spr_ralsei_down,
+							spr_ralsei_left,	spr_ralsei_right);
+char_map_4dir(map, "walk",	spr_ralsei_up,		spr_ralsei_down,
+							spr_ralsei_left,	spr_ralsei_right);
 
 
 
