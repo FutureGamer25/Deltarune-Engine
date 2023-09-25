@@ -4,11 +4,11 @@ global.dt = 1 / game_get_speed(gamespeed_fps);
 #region window
 //remember to set the size of rm_init to the scaled dimensions
 //otherwise the screen may look weird for a second
-global.view_width = 320;
-global.view_height = 240;
-//global.view_scale = game_get_max_scale(global.view_width, global.view_height);
-global.view_scale = 2; //TODO: switch back
-game_set_resolution(global.view_width, global.view_height, global.view_scale);
+global.camWidth = 320;
+global.camHeight = 240;
+global.camScale = 2 * game_get_max_scale(global.camWidth * 2, global.camHeight * 2);
+//global.camScale = 2; //TODO: switch back
+game_set_resolution(global.camWidth, global.camHeight, global.camScale);
 #endregion
 
 lang_set_newline("\\n");

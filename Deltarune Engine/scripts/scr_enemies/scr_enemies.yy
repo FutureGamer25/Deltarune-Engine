@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "battle_start",
+  "name": "scr_enemies",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

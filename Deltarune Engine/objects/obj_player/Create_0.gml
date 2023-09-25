@@ -18,6 +18,8 @@ follower_add(obj_ralsei);
 set_pause = function(_pause) {
 	pause = _pause;
 	running = false;
+	image_index = 0;
+	image_speed = 0;
 	char_sprite_state_delay_frame(charSprite, "stand");
 }
 

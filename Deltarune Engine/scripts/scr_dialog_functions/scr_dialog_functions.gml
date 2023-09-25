@@ -18,7 +18,7 @@ function dialog_create(str_or_array, top_of_screen = undefined) {
 		top_of_screen = false;
 		if instance_exists(obj_player) {
 			var pos = obj_player.y - camera_get_view_y(view_get_camera(0));
-			if (pos > (global.view_height / 2 + 16)) top_of_screen = true;
+			if (pos > (global.camHeight / 2 + 16)) top_of_screen = true;
 		}
 	}
 	
@@ -33,8 +33,8 @@ function __dialog_default_transform(dialog_obj, top_of_screen) {
 	var h = __dialog_box_height;
 	var sep = __dialog_box_sep;
 	with dialog_obj {
-		x = (global.view_width - w) / 2;
-		y = top_of_screen ? sep : (global.view_height - h - sep);
+		x = (global.camWidth - w) / 2;
+		y = top_of_screen ? sep : (global.camHeight - h - sep);
 		set_size(w, h);
 	}
 }
