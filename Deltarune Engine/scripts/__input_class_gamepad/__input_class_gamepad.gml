@@ -395,7 +395,7 @@ function __input_class_gamepad(_index) constructor
             __steam_handle_index = steam_input_get_gamepad_index_for_controller(__steam_handle);
             if (__steam_handle_index == -1) return;
                 
-            var _handle_type = steam_input_get_input_type_for_handle(__steam_handle);
+            var _handle_type = steam_input_input_check_type_for_handle(__steam_handle);
             if not (is_numeric(_handle_type) && (_handle_type >= 0)) return;
 
             var _description = __global.__steam_type_to_name[$ _handle_type];

@@ -1,8 +1,8 @@
 /// @desc
-var menu		= get_input_pressed("cancel");
-var vertical	= get_input("vertical_pressed");
-var horizontal	= get_input("horizontal_pressed");
-var confirm		= get_input_pressed("confirm")
+var menu		= input_check_pressed("cancel");
+var vertical	= input_check("vertical_pressed");
+var horizontal	= input_check("horizontal_pressed");
+var confirm		= input_check_pressed("confirm")
 
 
 if can_input {

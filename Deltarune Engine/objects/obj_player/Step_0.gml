@@ -1,11 +1,11 @@
 if (!pause) {
 
 
-var horizontal = get_input("horizontal");
-var vertical = get_input("vertical");
-var menu = get_input_pressed("cancel");
-var run = get_input("cancel");
-var interact = get_input_pressed("confirm");
+var horizontal = input_check("right") - input_check("left");
+var vertical = input_check("down") - input_check("up");
+var menu = input_check_pressed("menu");
+var run = input_check("cancel");
+var interact = input_check_pressed("confirm");
 
 #region move
 running = run;

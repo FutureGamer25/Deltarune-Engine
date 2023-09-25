@@ -83,6 +83,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"24  Mouse (Direct)","folderPath":"folders/Input/24  Mouse (Direct).yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"25  Gamepads (Direct)","folderPath":"folders/Input/25  Gamepads (Direct).yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"26  Keyboard (Direct)","folderPath":"folders/Input/26  Keyboard (Direct).yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Battle","folderPath":"folders/General/Battle.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles",},
@@ -255,6 +256,7 @@
     {"id":{"name":"obj_camera_setup","path":"objects/obj_camera_setup/obj_camera_setup.yy",},},
     {"id":{"name":"input_profile_export","path":"scripts/input_profile_export/input_profile_export.yy",},},
     {"id":{"name":"input_vibrate_set_pause","path":"scripts/input_vibrate_set_pause/input_vibrate_set_pause.yy",},},
+    {"id":{"name":"obj_battle","path":"objects/obj_battle/obj_battle.yy",},},
     {"id":{"name":"input_source_detect_input","path":"scripts/input_source_detect_input/input_source_detect_input.yy",},},
     {"id":{"name":"lang_get_array","path":"scripts/lang_get_array/lang_get_array.yy",},},
     {"id":{"name":"slerp_to","path":"scripts/slerp_to/slerp_to.yy",},},
@@ -308,6 +310,7 @@
     {"id":{"name":"input_axis_threshold_get","path":"scripts/input_axis_threshold_get/input_axis_threshold_get.yy",},},
     {"id":{"name":"scr_camera_functions","path":"scripts/scr_camera_functions/scr_camera_functions.yy",},},
     {"id":{"name":"input_chord_create","path":"scripts/input_chord_create/input_chord_create.yy",},},
+    {"id":{"name":"rm_battle","path":"rooms/rm_battle/rm_battle.yy",},},
     {"id":{"name":"__input_config_mouse","path":"scripts/__input_config_mouse/__input_config_mouse.yy",},},
     {"id":{"name":"input_cursor_coord_space_set","path":"scripts/input_cursor_coord_space_set/input_cursor_coord_space_set.yy",},},
     {"id":{"name":"input_profile_copy","path":"scripts/input_profile_copy/input_profile_copy.yy",},},
@@ -543,6 +546,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
+    {"roomId":{"name":"rm_battle","path":"rooms/rm_battle/rm_battle.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

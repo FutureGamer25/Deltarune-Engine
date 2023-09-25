@@ -1,7 +1,7 @@
 if (!checkInputs) exit;
 
-var confirm = get_input_pressed("confirm");
-var cancel = get_input_pressed("cancel");
+var confirm = input_check_pressed("confirm");
+var cancel = input_check_pressed("cancel");
 
 textbox_anim += .1;
 
@@ -31,6 +31,6 @@ if (state = "text") {
 		exit;
 	}
 	
-	var vertical = get_input_pressed("down") - get_input_pressed("up");
+	var vertical = input_check_pressed("down") - input_check_pressed("up");
 	optionSelected = modulo(optionSelected + vertical, array_length(optionKey));
 }
