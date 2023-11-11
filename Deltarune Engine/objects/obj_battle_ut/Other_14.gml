@@ -38,8 +38,10 @@ textbox_draw = function(){
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_top);
 			for (var i = 0; i < enemy_total; ++i) {
+				inst_enemy[i].hp = 10;
 				draw_text_transformed(52+36+12, 270 + (i*30),"* "+inst_enemy[i].name,2,2,0);
-				draw_sprite_ext(spr_pixel,0,636/2,560/2,2*(inst_enemy[i].hp),17,0,#00ff00,1);
+				draw_sprite_ext(spr_pixel,0,636/2,560/2,100,17,0,c_red,1);
+				draw_sprite_ext(spr_pixel,0,636/2,560/2,(inst_enemy[i].hp/inst_enemy[i].max_hp)*100,17,0,#00ff00,1);
 			}
 			draw_sprite(spr_soul_battle,0,72,286 + (enemy_sel*30));
 			

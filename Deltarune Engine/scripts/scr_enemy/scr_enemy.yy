@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Battle_UT",
-    "path": "folders/General/Battle_UT.yy",
+    "name": "enemy",
+    "path": "folders/General/Battle_UT/enemy.yy",
   },
 }

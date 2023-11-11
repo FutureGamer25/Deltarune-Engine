@@ -1,17 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bullet_mold_wave",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
-  ],
+  "name": "obj_moldsmol",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "bullets",
-    "path": "folders/General/Battle_UT/enemy/moldsmol/bullets.yy",
+    "name": "moldsmol",
+    "path": "folders/General/Battle_UT/enemy/moldsmol.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_moldsmol",
+    "path": "sprites/spr_moldsmol/spr_moldsmol.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

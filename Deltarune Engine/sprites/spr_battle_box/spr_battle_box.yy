@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "Battle_UT",
-    "path": "folders/General/Battle_UT.yy",
+    "name": "UI",
+    "path": "folders/General/Battle_UT/UI.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

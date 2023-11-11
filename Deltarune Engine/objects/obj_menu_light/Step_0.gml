@@ -1,7 +1,7 @@
 /// @desc
 var menu		= input_check_pressed("cancel");
-var vertical	= input_check("vertical_pressed");
-var horizontal	= input_check("horizontal_pressed");
+var horizontal	= input_check_pressed("right") - input_check_pressed("left");
+var vertical	= input_check_pressed("down") - input_check_pressed("up");
 var confirm		= input_check_pressed("confirm")
 
 

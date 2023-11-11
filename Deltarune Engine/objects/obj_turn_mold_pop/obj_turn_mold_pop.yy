@@ -9,12 +9,12 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Battle_UT",
-    "path": "folders/General/Battle_UT.yy",
+    "name": "turns",
+    "path": "folders/General/Battle_UT/enemy/moldsmol/turns.yy",
   },
   "parentObjectId": {
-    "name": "o_turn",
-    "path": "objects/o_turn/o_turn.yy",
+    "name": "obj_turn",
+    "path": "objects/obj_turn/obj_turn.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

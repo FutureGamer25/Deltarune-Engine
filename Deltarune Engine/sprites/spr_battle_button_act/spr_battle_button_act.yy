@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Buttons",
-    "path": "folders/General/Battle_UT/Buttons.yy",
+    "name": "spr",
+    "path": "folders/General/Battle_UT/Buttons/spr.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

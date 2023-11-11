@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Battle_UT",
-    "path": "folders/General/Battle_UT.yy",
+    "name": "fight",
+    "path": "folders/General/Battle_UT/Buttons/fight.yy",
   },
   "parentObjectId": null,
   "persistent": false,

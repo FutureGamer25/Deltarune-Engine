@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Battle_UT",
-    "path": "folders/General/Battle_UT.yy",
+    "name": "enemy",
+    "path": "folders/General/Battle_UT/enemy.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -35,6 +35,7 @@ event_user(1);			//bg
 event_user(2);			//battles
 event_user(3);			//enemy
 event_user(4);			//text
+event_user(5);			//fight
 
 if !pre_fight call_later(	pre_fight_frames,
 							time_source_units_frames,
