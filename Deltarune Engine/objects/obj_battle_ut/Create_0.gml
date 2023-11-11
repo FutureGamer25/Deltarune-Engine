@@ -22,7 +22,8 @@ state = BATTLE_UT.INIT; //state machine variable
 
 enum BATTLE_TEXT{					//what text is being shown?
 	NARRATION,
-	ENEMY_SEL
+	ENEMY_SEL,
+	FIGHT_BAR
 }
 state_text = BATTLE_TEXT.NARRATION;
 

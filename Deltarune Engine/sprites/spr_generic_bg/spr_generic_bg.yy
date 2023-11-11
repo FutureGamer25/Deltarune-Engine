@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Deltarune Engine",
-    "path": "Deltarune Engine.yyp",
+    "name": "Battle_UT",
+    "path": "folders/General/Battle_UT.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

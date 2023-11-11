@@ -44,6 +44,10 @@ textbox_draw = function(){
 			draw_sprite(spr_soul_battle,0,72,286 + (enemy_sel*30));
 			
 			break;
+		case BATTLE_TEXT.FIGHT_BAR:
+			draw_sprite(spr_attack_barUT,0,40,255);
+			
+			break;
 	}
 }
 

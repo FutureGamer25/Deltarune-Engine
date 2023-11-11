@@ -20,7 +20,7 @@ next_state = BATTLE_UT.CHANGE;		//local vars won't work with the call_later func
 button_change = function(SFX=-1,_state){
 	state = BATTLE_UT.CHANGE;
 	if _state = BATTLE_UT.BUTTON_SEL {
-		//state_text = BATTLE_TEXT.NARRATION;
+		state_text = BATTLE_TEXT.NARRATION;
 		inst_text.set_text(text);
 	}
 	next_state = _state;
@@ -47,18 +47,19 @@ button_confirm = function(){
 }
 
 set_enemy_text = function(){
-	state_text = BATTLE_TEXT.ENEMY_SEL;
+	//state_text = BATTLE_TEXT.ENEMY_SEL;
 	inst_text.set_text("");
 }
 
 fight_sel = function(){
 	inst_text.set_text("");
+	state_text = BATTLE_TEXT.ENEMY_SEL;
 }
 show_fight_bar = false;
 fight_confirm = function(){
-	//show_fight_bar = true;
-	set_enemy_text();
+	state_text = BATTLE_TEXT.FIGHT_BAR;
 	button_change(snd_menu_confirm,BATTLE_UT.FIGHT_CONFIRM);
+	instance_create_layer(0,0,"UI",obj_fight_bar_UT);
 }
 fight_bar_setup = function(){
 	bar_x = 40;
@@ -67,11 +68,7 @@ fight_bar_setup = function(){
 fight_bar_gameplay = function(){
 	
 }
-draw_fight_bar = function(){
-	//if show_fight_bar {
-	//	draw_sprite(spr_attack_barUT,0,40,255);
-	//}
-}
+
 
 act_confirm = function(){
 }

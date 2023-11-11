@@ -12,4 +12,3 @@ bg_draw();
 data_draw();
 button_draw();
 textbox_draw();
-draw_fight_bar();
