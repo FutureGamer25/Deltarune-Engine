@@ -100,4 +100,6 @@ dialog_character("jeff", sprite_2, sprite_0, snd_dialog_sans, {
 depth_sort_set_layer("depth");
 instance_create_depth(0, 0, 0, obj_game);
 
+set_enemy_data();
+
 room_goto_next();

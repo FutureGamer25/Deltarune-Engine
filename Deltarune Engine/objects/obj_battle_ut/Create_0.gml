@@ -19,13 +19,26 @@ enum BATTLE_UT {
 	LOSE				//oop. you got gameover.
 }
 state = BATTLE_UT.INIT; //state machine variable
+
+enum BATTLE_TEXT{					//what text is being shown?
+	NARRATION,
+	ENEMY_SEL
+}
+state_text = BATTLE_TEXT.NARRATION;
+
 pre_fight = false;		//pre-battle cutscene?
 pre_fight_frames = 1;	//frames to start the fight
 
 event_user(0);			//init
-event_user(1);			//battles
+event_user(1);			//bg
+event_user(2);			//battles
+event_user(3);			//enemy
+event_user(4);			//text
 
 if !pre_fight call_later(	pre_fight_frames,
 							time_source_units_frames,
 							function(){state = BATTLE_UT.BUTTON_SEL});
 
+debug = true;
+
+num = 0;

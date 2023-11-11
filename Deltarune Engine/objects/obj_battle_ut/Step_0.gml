@@ -11,6 +11,10 @@ var hmove = right-left;
 var vmove = down-up;
 #endregion
 
+//if keyboard_check_pressed(ord("S"))
+//{
+//    screen_save(working_directory + "Screens\Screen_" + string(num++) + ".png")
+//}
 
 switch(state){
 	case BATTLE_UT.BUTTON_SEL:
@@ -19,6 +23,7 @@ switch(state){
 		if confirm button_confirm();
 		break;
 	case BATTLE_UT.FIGHT_SEL:
+		fight_sel();
 		if cancel button_change(-1,BATTLE_UT.BUTTON_SEL);
 		else if confirm fight_confirm();
 		break;
@@ -34,6 +39,11 @@ switch(state){
 		if cancel button_change(-1,BATTLE_UT.BUTTON_SEL);
 		else if confirm mercy_confirm();
 		break;
+	case BATTLE_UT.FIGHT_CONFIRM:
+		//fight_confirm();
+		break;
+		
+		
 }
 
 
