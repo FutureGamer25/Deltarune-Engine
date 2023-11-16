@@ -17,6 +17,22 @@ lang_file_load("object_interactions.txt");
 
 #region overworld sprite maps
 var map = char_map_create();
+global.charMapFrick = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_frisk_up,			spr_frisk_down,
+							spr_frisk_side,			spr_frisk_side);
+char_map_4dir(map, "walk",	spr_frisk_up_walk,		spr_frisk_down_walk,
+							spr_frisk_side_walk,	spr_frisk_side_walk);
+var map = char_map_create();
+global.charMapToriel = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_toriel_up,			spr_toriel_down,
+							spr_toriel_side,		spr_toriel_side);
+char_map_4dir(map, "walk",	spr_toriel_up_walk,		spr_toriel_down_walk,
+							spr_toriel_side_walk,	spr_toriel_side_walk);
+char_map_4dir(map, "talk",	spr_toriel_up,			spr_toriel_downT,
+							spr_toriel_sideT,		spr_toriel_sideT);
+var map = char_map_create();
 global.charMapLightKris = map;
 char_map_default(map, "stand");
 char_map_4dir(map, "stand",	spr_kris_light_up,		spr_kris_light_down,
@@ -80,8 +96,13 @@ global.colorStruct = {
 
 global.soundStruct = {
 	"sans" : snd_dialog_sans,
-	"harsh" : snd_dialog_harsh
+	"harsh" : snd_dialog_harsh,
+	"toriel" : snd_dialog_toriel
 }
+
+//global.owCharStruct = {
+//	TR:	obj_toriel
+//}
 
 text_set_color_struct(global.colorStruct);
 text_set_font_struct(global.fontStruct);
@@ -94,6 +115,14 @@ dialog_character("jeff", sprite_2, sprite_0, snd_dialog_sans, {
 	happy_talk : sprite_0,
 	normal : sprite_2,
 	normal_talk : sprite_0,
+});
+dialog_character("toriel", spr_toriel_port_happy, spr_toriel_port_happyT, snd_dialog_toriel, {
+	happy : spr_toriel_port_happy,
+	happy_talk : spr_toriel_port_happyT,
+	srs : spr_toriel_port_srs,
+	srs_talk : spr_toriel_port_srsT,
+	rat : spr_toriel_port_rat,
+	rat_talk : spr_toriel_port_ratT,
 });
 #endregion
 

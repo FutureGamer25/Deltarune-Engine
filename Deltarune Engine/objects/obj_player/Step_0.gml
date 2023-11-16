@@ -53,6 +53,14 @@ if moving {
 char_sprite_dir(charSprite, horizontal, vertical);
 #endregion
 
+
+var xx = char_sprite_get_x(charSprite)
+if xx = 1 || xx =  -1 { //hori
+	if xx = -1 image_xscale = -1;
+	else image_xscale = 1;
+}
+
+
 #region interact
 if interact {
 	var faceX = char_sprite_get_x(charSprite);

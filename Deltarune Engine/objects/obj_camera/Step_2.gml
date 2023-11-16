@@ -11,4 +11,11 @@ case "center":
 	y = room_height / 2;
 	camera_pos_object(camera, id, false);
 	break;
+case "char":
+	if instance_exists(obj){
+		x = ceil(obj.x - 0.5);
+		y = ceil(obj.y - 0.5);
+	}
+	camera_pos_object(camera, id, true);
+	break;
 }

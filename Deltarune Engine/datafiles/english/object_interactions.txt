@@ -37,3 +37,24 @@ That'd be 10 bucks.
 
 [ice_cream_no]
 Oh well... come again when you've improved your tastes!
+
+[start_scene]
+//#ow_char TR
+#char toriel
+#sound toriel
+Good morning, Frick.
+Are you ready for the big day?
+Hm? What was that?\nYou do not know why today is so important?
+Why, we are attending the Undertale {wait 2}Event 2!
+
+[toriel_scolds_frisk]
+You have to go.
+
+[RAT]
+//#ow_char TR
+#char toriel
+#sound toriel
+#face rat
+A RAT?!
+#face srs
+UNACCEPTABLE.

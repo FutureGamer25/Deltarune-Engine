@@ -1,11 +1,11 @@
-width = 100;
-height = 100;
+width = 288;
+height = 75;
 pages = [""];
 pageIndex = -1;
 textbox_anim = 0;
 
 color = c_white;
-font = global.fontLarge;
+font = font_dt_mono;
 sound = -1;
 character = undefined;
 charFace = noone;
@@ -13,6 +13,10 @@ charTalk = noone;
 
 checkInputs = false;
 endFunc = undefined;
+
+//textbox_spr = spr_textbox_dark;
+textbox_spr = spr_textbox_light;
+
 
 state = "text";
 /* possible states
@@ -82,6 +86,10 @@ next_page = function() {
 				charTalk = character.defaultTalk;
 			}
 			break;
+		//case "ow_char":
+		//	ow_character = global.owCharStruct[$ param];
+		//	state = char_sprite_get_state(ow_character.charSprite);
+		//	break;
 		case "face":
 			if is_undefined(character) break;
 			charFace = character.face[$ param] ?? character.defaultFace;

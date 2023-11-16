@@ -13,3 +13,5 @@ init = function(follower_index) {
 	char_sprite_dir(charSprite, data.dirX, data.dirY);
 	char_sprite_state(charSprite, "stand");
 }
+
+follow = true;

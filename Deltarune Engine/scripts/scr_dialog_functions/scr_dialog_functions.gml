@@ -1,5 +1,5 @@
-#macro __dialog_box_width 176
-#macro __dialog_box_height 56
+#macro __dialog_box_width 288
+#macro __dialog_box_height 75
 #macro __dialog_box_sep 16
 #macro __dialog_command_prefix "#"
 

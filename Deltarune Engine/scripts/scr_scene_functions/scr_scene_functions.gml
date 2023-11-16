@@ -95,6 +95,13 @@ function scene_goto_if(label_name, condition_func) {
 	scene_set_skip(false);
 }
 
+function scene_dialog(lang_key, top_of_screen = undefined, pause = false) {
+  scene_func(dialog_start, [lang_key, top_of_screen, pause]);
+  scene_func_repeat(function() {
+    if (!instance_exists(obj_dialog)) cutscene_skip();
+  });
+}
+
 #region branches
 function scene_branch_start() {
 	var thread = undefined;

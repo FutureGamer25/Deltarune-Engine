@@ -31,10 +31,13 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_kris_light_down",
-    "path": "sprites/spr_kris_light_down/spr_kris_light_down.yy",
+    "name": "spr_frisk_down",
+    "path": "sprites/spr_frisk_down/spr_frisk_down.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_frisk_down",
+    "path": "sprites/spr_frisk_down/spr_frisk_down.yy",
+  },
   "tags": [
     "pause",
   ],
