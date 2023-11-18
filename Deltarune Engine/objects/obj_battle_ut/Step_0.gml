@@ -42,6 +42,12 @@ switch(state){
 	case BATTLE_UT.FIGHT_CONFIRM:
 		//fight_confirm();
 		break;
+	case BATTLE_UT.PRE_COMBAT_DIO:
+		turn_pre_combat_dio();
+		break;
+	case BATTLE_UT.BOARD_TRANS:
+		turn_board_trans();
+		break;
 		
 		
 }

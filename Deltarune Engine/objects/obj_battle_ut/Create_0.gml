@@ -2,10 +2,11 @@
 enum BATTLE_UT {
 	INIT,				//prevents battle from starting right away
 	CHANGE,				//prevents button pressing from overlapping
-	PRE_FIGHT_DIO,		//enemy speaks, waits for input
+	PRE_COMBAT_NARA,	//narrator speaks
+	PRE_COMBAT_DIO,		//enemy speaks, waits for input
 	BOARD_TRANS,		//changes textbox
-	BATTLE_START,		//bullet hell starts
-	BATTLE_END,			//finish up the turn, set back to button_sel
+	COMBAT_START,		//bullet hell starts
+	COMBAT_END,			//finish up the turn, set back to button_sel
 	BUTTON_SEL,			//select main buttons
 	FIGHT_SEL,			//pick which enemy
 	FIGHT_CONFIRM,		//start the fight minigame
@@ -23,7 +24,8 @@ state = BATTLE_UT.INIT; //state machine variable
 enum BATTLE_TEXT{					//what text is being shown?
 	NARRATION,
 	ENEMY_SEL,
-	FIGHT_BAR
+	FIGHT_BAR,
+	NONE
 }
 state_text = BATTLE_TEXT.NARRATION;
 
@@ -35,7 +37,8 @@ event_user(1);			//bg
 event_user(2);			//battles
 event_user(3);			//enemy
 event_user(4);			//text
-event_user(5);			//fight
+event_user(5);			//turns
+event_user(6);			//fight
 
 if !pre_fight call_later(	pre_fight_frames,
 							time_source_units_frames,

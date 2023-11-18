@@ -1,4 +1,4 @@
-/// @desc Text
+/// @desc Text Box / Battle Board
 //NOTE: change how this is chosen later, because there could be mulitple enemies!
 text = enemy[0].intro_text;
 
@@ -64,4 +64,8 @@ textbox_slerp = function(){
 	_l = _x-_www
 	_r = _x+_www
 	_b = _y+_hhh
+}
+	
+textbox_set = function(_txt){
+	text = _txt;
 }

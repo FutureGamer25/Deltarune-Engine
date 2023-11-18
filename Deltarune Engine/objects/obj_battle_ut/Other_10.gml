@@ -31,16 +31,28 @@ data_draw = function(){
 	*/
 	#endregion
 	
+	fight_type = "default"
+	
 	#region Debug
 	if debug {
 		var st;
 		var ts;
 		switch(state){
+			default: st = "OTHER"; break;
 			case BATTLE_UT.INIT:
 				st = "INIT";
 				break;
 			case BATTLE_UT.CHANGE:
 				st = "CHANGE";
+				break;
+			case BATTLE_UT.BOARD_TRANS:
+				st = "BOARD_TRANS";
+				break;
+			case BATTLE_UT.PRE_COMBAT_DIO:
+				st = "PRE_COMBAT_DIO";
+				break;
+			case BATTLE_UT.PRE_COMBAT_NARA:
+				st = "PRE_COMBAT_NARA";
 				break;
 			case BATTLE_UT.ACT_SEL:
 				st = "ACT SELECTION";

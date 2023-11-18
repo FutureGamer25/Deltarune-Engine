@@ -9,11 +9,16 @@ spr_buttons = [	#region buttons					//list of button sprites.
 button_total = array_length(spr_buttons);	//because of this will update by the amount above.
 button_sel = 0;
 button_draw = function(){
+	var show_heart = state = BATTLE_UT.BUTTON_SEL ? true : false;
 	for (var i = 0; i < button_total; ++i) {	//this will then run as many times button_total
-		var button_frame = button_sel = i ? 1 : 0;
+		if show_heart {
+			var button_frame = button_sel = i ? 1 : 0;
+		}else{
+			var button_frame = 0;
+		}
 		draw_sprite(spr_buttons[i],button_frame,32+(i*153),432);
 	}
-	draw_sprite(spr_soul_battle,0,48+(button_sel*153),454);
+	if show_heart draw_sprite(spr_soul_battle,0,48+(button_sel*153),454);
 }
 next_state = BATTLE_UT.CHANGE;		//local vars won't work with the call_later function
 //button change is a fail safe to prevent any input conflicts.

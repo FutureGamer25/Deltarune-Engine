@@ -1,17 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fight_bar_default",
+  "name": "obj_enemy_dio",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "fight",
-    "path": "folders/General/Battle_UT/Buttons/fight.yy",
+    "name": "Battle_UT",
+    "path": "folders/General/Battle_UT.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_battle_bar",
-    "path": "sprites/spr_battle_bar/spr_battle_bar.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
