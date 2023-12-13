@@ -209,7 +209,6 @@
     {"id":{"name":"__input_restart_get","path":"scripts/__input_restart_get/__input_restart_get.yy",},},
     {"id":{"name":"input_icons_keyboard_and_mouse","path":"scripts/input_icons_keyboard_and_mouse/input_icons_keyboard_and_mouse.yy",},},
     {"id":{"name":"__input_gamepad_set_type","path":"scripts/__input_gamepad_set_type/__input_gamepad_set_type.yy",},},
-    {"id":{"name":"obj_bat_hit","path":"objects/obj_bat_hit/obj_bat_hit.yy",},},
     {"id":{"name":"spr_toriel_downT","path":"sprites/spr_toriel_downT/spr_toriel_downT.yy",},},
     {"id":{"name":"__input_gamepad_stop_trigger_effects","path":"scripts/__input_gamepad_stop_trigger_effects/__input_gamepad_stop_trigger_effects.yy",},},
     {"id":{"name":"__input_key_name_set","path":"scripts/__input_key_name_set/__input_key_name_set.yy",},},

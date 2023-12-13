@@ -165,7 +165,6 @@
     {"name":"__input_restart_get","order":18,"path":"scripts/__input_restart_get/__input_restart_get.yy",},
     {"name":"input_icons_keyboard_and_mouse","order":3,"path":"scripts/input_icons_keyboard_and_mouse/input_icons_keyboard_and_mouse.yy",},
     {"name":"__input_gamepad_set_type","order":6,"path":"scripts/__input_gamepad_set_type/__input_gamepad_set_type.yy",},
-    {"name":"obj_bat_hit","order":70,"path":"objects/obj_bat_hit/obj_bat_hit.yy",},
     {"name":"spr_toriel_downT","order":2,"path":"sprites/spr_toriel_downT/spr_toriel_downT.yy",},
     {"name":"__input_gamepad_stop_trigger_effects","order":8,"path":"scripts/__input_gamepad_stop_trigger_effects/__input_gamepad_stop_trigger_effects.yy",},
     {"name":"__input_key_name_set","order":2,"path":"scripts/__input_key_name_set/__input_key_name_set.yy",},
