@@ -113,7 +113,7 @@ scene_func(function(){
 		audio_play_sound(snd_scifeild,1,false);
 	}
 });
-scene_wait(60*1);
+scene_wait(60*1.6);
 
 scene_func(function(){
 	with(obj_sans) {
@@ -211,7 +211,9 @@ scene_func(function(){
 });
 scene_lerp_func(0,3,6,"linear",function(_x){
 	obj_gaster.image_index = _x;
-		audio_play_sound(snd_bat_hit,1,false);
+});
+scene_func(function(){
+	audio_play_sound(snd_bat_hit,1,false);
 });
 scene_wait(4);
 scene_func(function(){
