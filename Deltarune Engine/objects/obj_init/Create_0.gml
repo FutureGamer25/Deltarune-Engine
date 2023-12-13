@@ -121,7 +121,15 @@ global.colorStruct = {
 global.soundStruct = {
 	"sans" : snd_dialog_sans,
 	"harsh" : snd_dialog_harsh,
-	"toriel" : snd_dialog_toriel
+	"toriel" : snd_dialog_toriel,
+	"gaster":[
+		snd_voice_gaster_1,
+		snd_voice_gaster_2,
+		snd_voice_gaster_3,
+		snd_voice_gaster_4,
+		snd_voice_gaster_5,
+		snd_voice_gaster_6
+	]
 }
 
 //global.owCharStruct = {

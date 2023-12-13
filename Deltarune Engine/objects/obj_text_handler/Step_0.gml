@@ -10,7 +10,7 @@ while (progress < progressMax && typeTimer <= 0) {
 	progress ++;
 	var char = string_char_at(text, progress);
 	
-	if (audio_exists(typeSound) || is_array(typeSound)) {
+	if (typeSound != -1) {
 		if (char != "\a" && string_pos(char, global.text_data.silent) = 0) {
 			playSound = true;
 		}
@@ -37,12 +37,12 @@ while (progress < progressMax && typeTimer <= 0) {
 	}
 }
 
-if (audio_exists(typeSound) || is_array(typeSound)) {
+if (typeSound != -1) {
 	if playSound {
 		playSound = false;
 		var snd = typeSound;
 		if is_array(typeSound) {
-			snd = typeSound[ irandom(array_length(typeSound - 1)) ];
+			snd = typeSound[ irandom(array_length(typeSound) - 1) ];
 		}
 		audio_play_sound(snd, 0, false, global.text_data.gain);
 	}

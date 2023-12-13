@@ -1,7 +1,7 @@
 /// @desc
 var cut = cutscene_create()
 cutscene_run(cut);
-#region
+#region Toriel
 
 scene_move_speed(obj_player_toriel,obj_player_toriel.x,172,1);
 scene_move_speed(obj_player_toriel,obj_player_toriel.x-40,172,1);
@@ -21,6 +21,7 @@ scene_move_speed(obj_frick,obj_frick.x-40,172+10,1);
 scene_wait(10);
 scene_func(function(){
 	instance_create_depth(193,89,0,obj_spider_atk);
+	audio_play_sound(snd_random_spooky_gaster_spider,1,false);
 });
 scene_wait(60);
 
@@ -77,10 +78,10 @@ scene_func(function(){
 		sprite_index = spr_sans_shrug;
 		audio_play_sound(snd_Sitcom_Laugh_Track,1,false);
 	}
-	audio_sound_gain(bgm,0,6000);
+	audio_sound_gain(bgm,0,1);
 });
 scene_branch_start();
-scene_wait(60);
+scene_wait(60*3);
 scene_func(function(){
 	audio_play_sound(bgm_sans,1,true);
 });
@@ -108,6 +109,7 @@ scene_func(function(){
 	with(obj_sans) {
 		spr_update = false;
 		sprite_index = spr_sans_shrug;
+		audio_pause_all();
 		audio_play_sound(snd_scifeild,1,false);
 	}
 });
@@ -118,6 +120,7 @@ scene_func(function(){
 		spr_update = true;
 		char_sprite_dir(charSprite, 0, -1);
 	}
+	instance_unpause_all();
 });
 scene_dialog("sans orders");
 scene_func(function(){
@@ -146,7 +149,7 @@ scene_func(function(){
 scene_dialog("sans cool");
 scene_move_speed(obj_sans,obj_sans.x-60,172,1);
 scene_wait(10);
-scene_dialog("sans waita sec");
+scene_dialog("sans waita sec",true);
 scene_wait(10);
 scene_func(function(){
 	with(obj_gaster) {
@@ -166,7 +169,7 @@ scene_dialog("gaster waita shocked",false);
 scene_branch_pause(branch);
 scene_func(function(){
 	with(obj_gaster) {
-		image_index = 2;
+		image_index = 3;
 	}
 });
 scene_wait(10);
@@ -176,12 +179,7 @@ scene_func(function(){
 	}
 });
 scene_dialog("sans cool");
-scene_func(function(){
-	with(obj_gaster) {
-		sprite_index = spr_gaster_singles;
-		image_index =3;
-	}
-});
+
 scene_move_speed(obj_sans,obj_sans.x,172,1);
 scene_func(function(){
 	with(obj_sans) {

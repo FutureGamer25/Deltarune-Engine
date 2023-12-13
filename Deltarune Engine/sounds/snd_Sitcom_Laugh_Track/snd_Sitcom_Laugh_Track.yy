@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 6.456,
   "parent": {
-    "name": "Deltarune Engine",
-    "path": "Deltarune Engine.yyp",
+    "name": "bullshit",
+    "path": "folders/bullshit.yy",
   },
   "preload": false,
   "sampleRate": 44100,

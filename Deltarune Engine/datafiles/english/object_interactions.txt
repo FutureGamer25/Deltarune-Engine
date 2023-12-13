@@ -48,6 +48,8 @@ Hm? What was that?\nYou do not know why today is so important?
 Why, we are attending the Undertale {wait 2}Event 2!
 
 [toriel_scolds_frisk]
+#char toriel
+#sound toriel
 You have to go.
 
 [RAT]
@@ -66,6 +68,7 @@ UNACCEPTABLE.
 boy, i sure am ready for a specific undertale-related event.
 
 [man stand]
+#sound gaster
 I AM. THE MAN WHO MANS THE STAND.
 TALK TO THE HANDS\n-WHAT DO YOU WANT?
 #char sans
@@ -73,6 +76,7 @@ TALK TO THE HANDS\n-WHAT DO YOU WANT?
 yeah, hey gaster. do you got any grapes?
 #char
 #font ut
+#sound gaster
 GRAPES ARE GREAT!
 HOWEVER...{wait 1}DUE TO UNFORTUNATE CIRCUMSTANCES...
 WE DO NOT HAVE GRAPES.
@@ -99,6 +103,7 @@ cool.
 huh. {wait 1}i think i got the wrong event.
 
 [gaster waita shocked]
+#sound gaster
 OH REALLY?
 HOW... TROUBLING.{wait 1}/nPERHAPS... I CAN SHOW YOU...
 ON THIS MAP I HAVE HERE.
