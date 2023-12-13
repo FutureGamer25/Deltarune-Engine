@@ -14,7 +14,7 @@ charSprite = char_sprite_create(global.charMapToriel);
 spr_override = false;
 cutscene_started = false;
 
-follower_add(obj_frick);
+//follower_add(obj_frick);
 
 
 with(obj_camera){

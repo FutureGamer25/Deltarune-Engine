@@ -33,6 +33,28 @@ char_map_4dir(map, "walk",	spr_toriel_up_walk,		spr_toriel_down_walk,
 char_map_4dir(map, "talk",	spr_toriel_up,			spr_toriel_downT,
 							spr_toriel_sideT,		spr_toriel_sideT);
 var map = char_map_create();
+global.charMapTorielSad = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_toriel_up,			spr_toriel_frownD,
+							spr_toriel_frownS,		spr_toriel_frownS);
+char_map_4dir(map, "walk",	spr_toriel_up_walk,		spr_toriel_down_walk,
+							spr_toriel_side_walk,	spr_toriel_side_walk);
+char_map_4dir(map, "talk",	spr_toriel_up,			spr_toriel_downT,
+							spr_toriel_sideT,		spr_toriel_sideT);
+							
+							
+var map = char_map_create();
+global.charMapSans = map;
+char_map_default(map, "stand");
+char_map_4dir(map, "stand",	spr_sans_u,			spr_sans_d,
+							spr_sans_s,		spr_sans_s);
+char_map_4dir(map, "walk",		spr_sans_u_w,			spr_sans_d_w,
+							spr_sans_s_w,		spr_sans_s_w);
+char_map_4dir(map, "talk",	spr_toriel_up,			spr_toriel_downT,
+							spr_toriel_sideT,		spr_toriel_sideT);
+							
+							
+var map = char_map_create();
 global.charMapLightKris = map;
 char_map_default(map, "stand");
 char_map_4dir(map, "stand",	spr_kris_light_up,		spr_kris_light_down,
@@ -83,7 +105,9 @@ char_map_4dir(map, "walk",	spr_ralsei_up,		spr_ralsei_down,
 #region dialog and text stuff
 global.fontStruct = {
 	"normal" : global.fontLarge,
-	"arial" : font_arial
+	"arial" : font_arial,
+	"sans": font_sans,
+	"ut": font_dt_mono
 }
 
 global.colorStruct = {
@@ -123,6 +147,22 @@ dialog_character("toriel", spr_toriel_port_happy, spr_toriel_port_happyT, snd_di
 	srs_talk : spr_toriel_port_srsT,
 	rat : spr_toriel_port_rat,
 	rat_talk : spr_toriel_port_ratT,
+});
+dialog_character("sans", spr_face_sans_nuetral, spr_face_sans_nuetral, snd_dialog_sans, {
+	neutral: spr_face_sans_nuetral,
+	neutral_talk: spr_face_sans_nuetral,
+	closed: spr_face_sans_closed,
+	closed_talk: spr_face_sans_closed,
+	half_closed: spr_face_sans_half_closed,
+	half_closed_talk: spr_face_sans_half_closed,
+	side: spr_face_sans_side,
+	side_talk: spr_face_sans_side,
+	side_happy: spr_face_sans_side,
+	side_happy_talk: spr_face_sans_side_happy,
+	wink: spr_face_sans_wink,
+	wink_talk: spr_face_sans_wink,
+	danger: spr_face_sans_danger,
+	danger_talk: spr_face_sans_danger,
 });
 #endregion
 

@@ -38,6 +38,11 @@ if !cutscene_started {
 			});
 			scene_func(function(){
 				instance_destroy(obj_player);
+				instance_destroy(obj_player);
+				instance_destroy(obj_player);
+				instance_destroy(obj_player);
+				instance_destroy(obj_player);
+				instance_destroy(obj_player);
 			});
 			cutscene_run(cut);
 		}

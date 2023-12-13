@@ -58,3 +58,49 @@ You have to go.
 A RAT?!
 #face srs
 UNACCEPTABLE.
+
+[theater_start]
+#char sans
+#face wink
+#font sans
+boy, i sure am ready for a specific undertale-related event.
+
+[man stand]
+I AM. THE MAN WHO MANS THE STAND.
+TALK TO THE HANDS\n-WHAT DO YOU WANT?
+#char sans
+#font sans
+yeah, hey gaster. do you got any grapes?
+#char
+#font ut
+GRAPES ARE GREAT!
+HOWEVER...{wait 1}DUE TO UNFORTUNATE CIRCUMSTANCES...
+WE DO NOT HAVE GRAPES.
+HOW ABOUT INSTEAD A WONDERFUL...{wait 1} LEMONADE?
+#char sans
+#face wink
+#font sans
+lemon-me see it?
+
+
+[sans orders]
+#char sans
+#font sans
+heh, yeah man i'll take one.
+
+[sans cool]
+#char sans
+#font sans
+cool.
+
+[sans waita sec]
+#char sans
+#font sans
+huh. {wait 1}i think i got the wrong event.
+
+[gaster waita shocked]
+OH REALLY?
+HOW... TROUBLING.{wait 1}/nPERHAPS... I CAN SHOW YOU...
+ON THIS MAP I HAVE HERE.
+COME HERE TO SEE.
+
