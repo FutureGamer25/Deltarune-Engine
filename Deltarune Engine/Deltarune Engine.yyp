@@ -129,7 +129,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.0.121",
+    "IDEVersion": "2023.8.1.102",
   },
   "resources": [
     {"id":{"name":"input_mouse_coord_space_get","path":"scripts/input_mouse_coord_space_get/input_mouse_coord_space_get.yy",},},

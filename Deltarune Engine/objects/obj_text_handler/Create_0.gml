@@ -103,7 +103,7 @@ set_style = function(style) {
 }
 
 set_sound = function(sound) {
-	if (!is_real(sound)) sound = -1;
+	if (!is_handle(sound) && !is_array(sound)) sound = -1;
 	defaultSound = sound;
 	typeSound = sound;
 }
