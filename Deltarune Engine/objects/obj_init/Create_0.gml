@@ -64,6 +64,16 @@ char_map_4dir(map, "walk",	spr_ralsei_up,		spr_ralsei_down,
 
 #endregion
 
+#region DR fonts
+var _mapstring_party = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890/"
+var _mapstring_hp = "1234567890"
+global.font_party_name_short = font_add_sprite_ext(spr_font_party_name, _mapstring_party, true, 1);
+global.font_party_name_medium = font_add_sprite_ext(spr_font_party_name, _mapstring_party, true, 0);
+global.font_party_name_long = font_add_sprite_ext(spr_font_party_name, _mapstring_party, true, -1);
+global.font_ui_hp = font_add_sprite_ext(spr_font_hp, _mapstring_hp, true, 2);
+#endregion
+
+
 #region dialog and text stuff
 global.fontStruct = {
 	"normal" : global.fontLarge,
