@@ -1,0 +1,1 @@
+audio_play_sound(bgm_the_day_monsters_gotten_their_last_soul,1,false);

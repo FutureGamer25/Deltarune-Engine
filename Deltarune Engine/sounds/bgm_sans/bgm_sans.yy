@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 50.65143,
+  "duration": 67.5,
   "parent": {
     "name": "bullshit",
     "path": "folders/bullshit.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "bgm_sans.mp3",
+  "soundFile": "bgm_sans.wav",
   "type": 0,
   "volume": 1.0,
 }

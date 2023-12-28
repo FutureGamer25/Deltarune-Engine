@@ -73,14 +73,24 @@ I AM. THE MAN WHO MANS THE STAND.
 TALK TO THE HANDS\n-WHAT DO YOU WANT?
 #char sans
 #font sans
-yeah, hey gaster. do you got any grapes?
+yeah, hey gaster.
+you got a job here?\nis science not paying enough, lol?
+#char
+#sound gaster
+#font ut
+SOMETHING LIKE THAT.
+NOW WHAT WOULD YOU LIKE, MY DEAREST ASSISTANT?
+#char sans
+#font sans
+got any grapes?
 #char
 #font ut
 #sound gaster
-GRAPES ARE GREAT!
-HOWEVER...{wait 1}DUE TO UNFORTUNATE CIRCUMSTANCES...
-WE DO NOT HAVE GRAPES.
-HOW ABOUT INSTEAD A WONDERFUL...{wait 1} LEMONADE?
+GRAPES ARE GREAT!\nHOWEVER...
+DUE TO UNFORTUNATE CIRCUMSTANCES...\nWE DO NOT HAVE GRAPES.
+HOW ABOUT INSTEAD A WONDERFUL LEMONADE?
+
+
 #char sans
 #face wink
 #font sans
@@ -105,7 +115,95 @@ huh. {wait 1}i think i got the wrong event.
 [gaster waita shocked]
 #sound gaster
 OH REALLY?
-HOW... TROUBLING.{wait 1}/nPERHAPS... I CAN SHOW YOU...
-ON THIS MAP I HAVE HERE.
+HOW... TROUBLING.{wait 1}/nPERHAPS...\n I CAN SHOW YOU...
+ON THIS MAP I HAVE HERE.\nTHAT I ABSOLUTELY HAVE.
 COME HERE TO SEE.
 
+
+[final scene 1]
+#sound gaster
+MY DEAREST ASSISTANT, YOU ARE FINALLY AWAKE!
+#char sans
+#font sans
+huh?\nwhat?
+where am i?\nwhat happened?
+#char
+#sound gaster
+#font ut
+YOU ARE IN A HOSPITAL...
+YOU PASSED OUT FROM A DELAYED ALLERGIC REACTION TO LEMONS.
+#char sans
+#font sans
+that means-?
+it was all a dream?
+#char
+#sound gaster
+#font ut
+WHAT? DO YOU MEAN MY EVENT?
+OF COURSE IT WAS REAL!
+YOU COLLAPSED DURING THE CROSS OVER EVENT!
+THANKFULLY, I HAD MANAGED TO STABLIZE THE MULTIVERSE.
+AND JUST IN TIME,{wait 1}WITH ONLY MINIMAL CASUALTIES!
+#char sans
+#font sans
+...
+#face danger
+i think i met god...?
+#char
+#font ut
+#sound gaster
+YEAH YEAH, I HAVE GOD IN MY HOUSE.\nTHAT IS OLD NEWS.
+#char sans
+#font sans
+okay.
+#char
+#font ut
+#sound gaster
+...
+I WANT TO SINCERLY APOLOGIZE.
+I HAVE BEEN... OUT OF CONTROL.
+#char sans
+#font sans
+hey hey, that's enough from you.
+#face wink
+i don't like to go digging up old bones.
+let it rest\n-or better yet, let me rest.
+#face half_closed
+i'm mad tired.
+#char
+#font ut
+#sound gaster
+THAT IS PERFECTLY UNDERSTANDABLE.
+...HOWEVER
+WOULD YOU PERHAPS BE INTRESTED IN...
+UNDEREVENT?
+#char sans
+#font sans
+#face half_closed
+oh shoot, did i miss it?
+#char
+#font ut
+#sound gaster
+NO, AND EVEN BETTER YET!
+I HAVE OBTAINED AN EARLY COPY ON DIGITAL VIDEO DISK.
+#char sans
+#font sans
+#face side_happy
+no way, you got it early?\nhow'd you do that?
+#char
+#font ut
+#sound gaster
+YOU SEE, I HAVE MADE AMENDS WITH THE UNDERSTAFF.
+
+[final scene 2]
+#char
+#font ut
+#sound gaster
+WE ARE NOW. CHILL.
+//the cameos come in
+WOULD YOU BE INTRESTED IN OBSERVING THIS...
+VERY. VERY. INTRESTING EVENT?
+#char sans
+#font sans
+#face side_happy
+heh, you know it.
