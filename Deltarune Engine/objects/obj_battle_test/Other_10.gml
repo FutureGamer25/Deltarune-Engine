@@ -1,1 +1,1 @@
-battle_start("you");
+battle_start(["frgoot","frgoot","frgoot"]);

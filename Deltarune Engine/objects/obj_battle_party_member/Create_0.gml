@@ -1,1 +1,1 @@
-member = 0;
+//member = party_get("kris");

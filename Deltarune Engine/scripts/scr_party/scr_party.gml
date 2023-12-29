@@ -1,23 +1,47 @@
 global.party = [];
 global.partyData = {};
 
-function party_reset_data() {
-	//current members in party
-	global.party = ["player"];
-	
+function party_reset_data() {	
 	//all member data
 	global.partyData = {
 		"player": {
+			name: "Player",
 			hp: 100,
 			maxHp: 100,
-			atk: 20
+			atk: 20,
+			def: 4,
+			sprites: {idle: spr_idle_temp,attack: spr_attack_temp,defend: spr_defend_temp,down: spr_down_temp},
+			colour: c_white
 		},
 		"jeffrey": {
+			name: "Jeffrey",
 			hp: 1,
-			hpMax: 1,
-			atk: 1
+			maxHp: 1,
+			atk: 1,
+			def: 1,
+			colour: c_orange
+		},
+		"kris": {
+			name: "Kris",
+			hp: 90,
+			maxHp: 90,
+			atk: 10,
+			def: 2,
+			sprites: {idle: spr_krisb_idle,attack: spr_krisb_attack,defend: spr_krisb_defend,down: spr_krisb_down},
+			colour: c_aqua
+		},
+		"susie": {
+			name: "Susie",
+			hp: 110,
+			maxHp: 110,
+			atk: 14,
+			def: 2,
+			sprites: {idle: spr_susieb_idle,attack: spr_susieb_attack,defend: spr_susieb_defend,down: spr_susieb_down},
+			colour: c_fuchsia
 		}
 	};
+	//current members in party
+	global.party = ["kris","susie","kris"];
 }
 
 function party_get(name_or_index) {
