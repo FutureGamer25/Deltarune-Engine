@@ -1,4 +1,9 @@
-if (!pause) {
+if get_pause() {
+	running = false;
+	image_index = 0;
+	image_speed = 0;
+	char_sprite_state_delay_frame(charSprite, "stand");
+} else {
 
 
 var horizontal = input_check("right") - input_check("left");

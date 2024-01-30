@@ -28,10 +28,11 @@ textbox_draw = function(){
 	
 	switch(state_text){
 		case BATTLE_TEXT.NARRATION:
-			draw_set_font(font_dt_mono);
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_top);
-			text_draw(inst_text, 52, 270, -1, 220,2);
+			text_set_font(inst_text, font_dt_mono);
+			text_set_wrap(inst_text, 220);
+			text_draw(inst_text, 52, 270, 2, 2);
 			break;
 		case BATTLE_TEXT.ENEMY_SEL:
 			draw_set_font(font_dt_mono);

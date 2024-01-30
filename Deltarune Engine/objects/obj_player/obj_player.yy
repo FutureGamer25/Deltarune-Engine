@@ -35,8 +35,5 @@
     "path": "sprites/spr_kris_light_down/spr_kris_light_down.yy",
   },
   "spriteMaskId": null,
-  "tags": [
-    "pause",
-  ],
   "visible": true,
 }
