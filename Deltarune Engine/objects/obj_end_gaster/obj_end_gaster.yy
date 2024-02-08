@@ -1,16 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_rec",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
-  ],
+  "name": "obj_end_gaster",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "bullshit",
-    "path": "folders/bullshit.yy",
+    "name": "Deltarune Engine",
+    "path": "Deltarune Engine.yyp",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,7 +25,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_gaster_depressed",
+    "path": "sprites/spr_gaster_depressed/spr_gaster_depressed.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

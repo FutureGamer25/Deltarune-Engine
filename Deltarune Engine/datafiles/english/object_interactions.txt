@@ -120,9 +120,11 @@ ON THIS MAP I HAVE HERE.\nTHAT I ABSOLUTELY HAVE.
 COME HERE TO SEE.
 
 
-[final scene 1]
+[final scene 0]
 #sound gaster
 MY DEAREST ASSISTANT, YOU ARE FINALLY AWAKE!
+
+[final scene 1]
 #char sans
 #font sans
 huh?\nwhat?
@@ -130,7 +132,7 @@ where am i?\nwhat happened?
 #char
 #sound gaster
 #font ut
-YOU ARE IN A HOSPITAL...
+{gaster_spr spr_gaster_calm}YOU ARE IN A HOSPITAL...
 YOU PASSED OUT FROM A DELAYED ALLERGIC REACTION TO LEMONS.
 #char sans
 #font sans
@@ -139,28 +141,28 @@ it was all a dream?
 #char
 #sound gaster
 #font ut
-WHAT? DO YOU MEAN MY EVENT?
-OF COURSE IT WAS REAL!
+{gaster_spr spr_gaster_confused}WHAT? DO YOU MEAN MY EVENT?
+{gaster_spr spr_gaster_correct}OF COURSE IT WAS REAL!
 YOU COLLAPSED DURING THE CROSS OVER EVENT!
-THANKFULLY, I HAD MANAGED TO STABLIZE THE MULTIVERSE.
+{gaster_spr spr_gaster_calm}THANKFULLY, I HAD MANAGED TO STABLIZE THE MULTIVERSE.
 AND JUST IN TIME,{wait 1}WITH ONLY MINIMAL CASUALTIES!
 #char sans
 #font sans
 ...
 #face danger
-i think i met god...?
+{sans_spr spr_sans_sit_god}i think i met god...?
 #char
 #font ut
 #sound gaster
-YEAH YEAH, I HAVE GOD IN MY HOUSE.\nTHAT IS OLD NEWS.
+{sans_spr spr_sans_sit_nuetral}{gaster_spr spr_gaster_def2}YEAH YEAH, I HAVE GOD IN MY HOUSE.\nTHAT IS OLD NEWS.
 #char sans
 #font sans
 okay.
 #char
 #font ut
 #sound gaster
-...
-I WANT TO SINCERLY APOLOGIZE.
+{gaster_spr spr_gaster_frown_close}...
+{gaster_spr spr_gaster_frown}I WANT TO SINCERLY APOLOGIZE.
 I HAVE BEEN... OUT OF CONTROL.
 #char sans
 #font sans
@@ -169,13 +171,13 @@ hey hey, that's enough from you.
 i don't like to go digging up old bones.
 let it rest\n-or better yet, let me rest.
 #face half_closed
-i'm mad tired.
+{sans_spr spr_sans_sit_sad}i'm mad tired.
 #char
 #font ut
 #sound gaster
-THAT IS PERFECTLY UNDERSTANDABLE.
+{gaster_spr spr_gaster_calm}THAT IS PERFECTLY UNDERSTANDABLE.
 ...HOWEVER
-WOULD YOU PERHAPS BE INTRESTED IN...
+{gaster_spr spr_gaster_side}WOULD YOU PERHAPS BE INTRESTED IN...
 UNDEREVENT?
 #char sans
 #font sans
@@ -184,12 +186,12 @@ oh shoot, did i miss it?
 #char
 #font ut
 #sound gaster
-NO, AND EVEN BETTER YET!
+{gaster_spr spr_gaster_grin}NO, AND EVEN BETTER YET!
 I HAVE OBTAINED AN EARLY COPY ON DIGITAL VIDEO DISK.
 #char sans
 #font sans
 #face side_happy
-no way, you got it early?\nhow'd you do that?
+{sans_spr spr_sans_sit_happy}no way, you got it early?\nhow'd you do that?
 #char
 #font ut
 #sound gaster
