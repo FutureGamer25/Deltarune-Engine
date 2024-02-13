@@ -20,7 +20,8 @@ function set_enemy_data() {
 			
 			intro_text : "Example Intro",
 			turn_text : ["Example 1", "Example 2", "Example 3"],
-			turn_list : [obj_turn_mold_pop,obj_turn_mold_wave],
+			turn_list : [obj_turn_mold_wave],
+			//turn_list : [obj_turn_mold_pop,obj_turn_mold_wave],
 			turn_rnd : true
 			
 		},

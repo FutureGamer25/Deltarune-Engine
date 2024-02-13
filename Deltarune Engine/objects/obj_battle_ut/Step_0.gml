@@ -15,6 +15,7 @@ var vmove = down-up;
 //{
 //    screen_save(working_directory + "Screens\Screen_" + string(num++) + ".png")
 //}
+reset_surf();
 
 switch(state){
 	case BATTLE_UT.BUTTON_SEL:
@@ -48,16 +49,9 @@ switch(state){
 	case BATTLE_UT.BOARD_TRANS:
 		turn_board_trans();
 		break;
+	case BATTLE_UT.COMBAT_START:
+		
+		break;
 		
 		
 }
-
-
-
-
-
-
-
-
-
-

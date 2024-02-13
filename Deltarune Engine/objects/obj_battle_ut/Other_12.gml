@@ -22,6 +22,8 @@ button_draw = function(){
 }
 next_state = BATTLE_UT.CHANGE;		//local vars won't work with the call_later function
 //button change is a fail safe to prevent any input conflicts.
+
+
 button_change = function(SFX=-1,_state){
 	state = BATTLE_UT.CHANGE;
 	if _state = BATTLE_UT.BUTTON_SEL {

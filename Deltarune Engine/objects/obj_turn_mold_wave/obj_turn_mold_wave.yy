@@ -32,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_soul_battle",
+    "path": "sprites/spr_soul_battle/spr_soul_battle.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

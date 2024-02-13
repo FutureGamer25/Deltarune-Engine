@@ -8,6 +8,7 @@ if x = 40 {
 }
 speed = hmove;
 
+//todo: add attack stats
 xx = 0;
 can_hit = true;
 atk = 1;

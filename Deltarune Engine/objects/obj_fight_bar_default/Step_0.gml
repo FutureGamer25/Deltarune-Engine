@@ -15,7 +15,7 @@ if can_hit { //it has not crossed the fight box yet
 		}else{
 			damage = lerp(value,0,xx/281); //ye idk actually
 		}
-		show_message(damage);
+		show_debug_message(damage);
 	}#endregion	
 }
 

@@ -1,7 +1,9 @@
 ///@desc Turns
 turn_end= function(narration){
 	//button_change(-1,BATTLE_UT.BUTTON_SEL); //debug sets to start fo turn
-	button_change(-1,BATTLE_UT.PRE_COMBAT_NARA);
+	Set_Nara_Box();
+	turn_new_narration();
+	with(obj_battle_soul) instance_destroy(obj_battle_soul);
 	state_text = BATTLE_TEXT.NARRATION;
 	narration = "Reaction Narration";
 	textbox_set(narration);
@@ -28,6 +30,16 @@ turn_pre_combat_dio = function(){
 turn_board_trans = function(){
 	//TODO: enemy turn should define box size
 	if targ_w = _w {
+		//TODO: mulptiple enemeies bles bla bla bla
+		with(obj_enemy_dio) instance_destroy(obj_enemy_dio);
+		inst_enemy[0].enemy_attack();
 		button_change(-1,BATTLE_UT.COMBAT_START);
 	}
+}
+
+turn_new_narration = function(){
+	text = inst_enemy[0].enemy_narration();
+	inst_text.set_text(text);
+	button_change(-1,BATTLE_UT.BUTTON_SEL);
+	show_debug_message("what the fuuuuuuck");
 }

@@ -33,15 +33,3 @@ fight_bar_gameplay = function(){
 	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-

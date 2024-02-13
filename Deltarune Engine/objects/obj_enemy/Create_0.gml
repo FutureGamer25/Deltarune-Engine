@@ -43,8 +43,8 @@ enemy_attack = function() {
 	} else {
 		turn = (turn + 1) % _length;
 	}
-	
-	return turn_list[turn];
+	var	enemy_turn = instance_create_layer(x+40,y-40,"UI",turn_list[turn],);
+			enemy_turn.enemy = id;
 }
 
 enemy_narration = function() {
@@ -54,12 +54,3 @@ enemy_narration = function() {
 enemy_destroy = function() {
 	instance_destroy();
 }
-
-
-
-
-
-
-
-
-

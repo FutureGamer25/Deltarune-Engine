@@ -49,7 +49,6 @@ textbox_draw = function(){
 			break;
 		case BATTLE_TEXT.FIGHT_BAR:
 			draw_sprite(spr_attack_barUT,0,40,255);
-			
 			break;
 	}
 }
@@ -69,4 +68,10 @@ textbox_slerp = function(){
 	
 textbox_set = function(_txt){
 	text = _txt;
+}
+
+surf = surface_create(room_width,room_height);
+
+reset_surf = function(){
+	if !surface_exists(surf) surf = surface_create(room_width,room_height);
 }

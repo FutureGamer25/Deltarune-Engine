@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_text_voice_default",
+  "name": "snd_dialog_default",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 0.060476,
   "parent": {
-    "name": "Text",
-    "path": "folders/Main/Objects/OWMenu/Inventory/Rare/Sounds/SFX/UTDR/Text.yy",
+    "name": "Voices",
+    "path": "folders/Sounds/Voices.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_text_voice_default",
+  "soundFile": "snd_dialog_default",
   "type": 0,
   "volume": 1.0,
 }

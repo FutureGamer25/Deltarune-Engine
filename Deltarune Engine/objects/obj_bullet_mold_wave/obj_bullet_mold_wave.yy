@@ -13,7 +13,10 @@
     "name": "bullets",
     "path": "folders/General/Battle_UT/enemy/moldsmol/bullets.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_bullet_ut",
+    "path": "objects/obj_bullet_ut/obj_bullet_ut.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,7 +32,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_soul_battle",
+    "path": "sprites/spr_soul_battle/spr_soul_battle.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

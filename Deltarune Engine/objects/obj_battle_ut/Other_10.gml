@@ -38,12 +38,15 @@ data_draw = function(){
 		var st;
 		var ts;
 		switch(state){
-			default: st = "OTHER"; break;
+			default: st = "BROKEN"; break;
 			case BATTLE_UT.INIT:
 				st = "INIT";
 				break;
 			case BATTLE_UT.CHANGE:
 				st = "CHANGE";
+				break;
+			case BATTLE_UT.COMBAT_START:
+				st = "COMBAT_START";
 				break;
 			case BATTLE_UT.BOARD_TRANS:
 				st = "BOARD_TRANS";
@@ -94,6 +97,12 @@ data_draw = function(){
 				break;
 			case BATTLE_TEXT.ENEMY_SEL:
 				var ts = "Enemy Sel";
+				break;
+			case BATTLE_TEXT.FIGHT_BAR:
+				var ts = "Fight Bar";
+				break;
+			case BATTLE_TEXT.NONE:
+				var ts = "None";
 				break;
 			default:
 				var ts = "What the hell"
