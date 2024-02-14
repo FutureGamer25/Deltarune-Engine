@@ -1,0 +1,1 @@
+obj_battle.enemy_units[0].sprite_index=obj_battle.enemy_units[0].unit.sprites.idle;

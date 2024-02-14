@@ -1,5 +1,6 @@
 instance_create_depth(0, 0, -100, obj_battle_background,{battle_bg: battle_bg});
 instance_create_depth(0, 0, -200, obj_battle_party);
+instance_create_depth(x+10,y+230,-999,obj_fight_button);
 d=0;
 d2=0;
 
@@ -24,4 +25,5 @@ for (var i=0; i<array_length(global.party); i++){
 	party_units[i].depth-=d2;
 }
 
+//play music
 audio_play_sound(bgm,100,true);

@@ -41,7 +41,7 @@ function party_reset_data() {
 		}
 	};
 	//current members in party
-	global.party = ["kris","susie","kris"];
+	global.party = ["kris","susie","player"];
 }
 
 function party_get(name_or_index) {

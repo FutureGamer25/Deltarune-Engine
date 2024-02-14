@@ -1,8 +1,9 @@
 global.enemyData = {
 	"frgoot": {
 		name: "frgoot",
-		hp: 5000,
+		hp: 100,
 		atk: 123123,
+		def: 4,
 		sprites: {idle: spr_enemy_idle,hurt: spr_enemy_hurt}
 	},
 }
