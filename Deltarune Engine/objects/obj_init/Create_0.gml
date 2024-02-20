@@ -16,45 +16,45 @@ lang_set_directory("english");
 lang_file_load("object_interactions.txt");
 
 #region overworld sprite maps
-var map = char_map_create();
+var map = char_sprite_map_create();
 global.charMapLightKris = map;
-char_map_default(map, "stand");
-char_map_4dir(map, "stand",	spr_kris_light_up,		spr_kris_light_down,
-							spr_kris_light_left,	spr_kris_light_right);
-char_map_4dir(map, "walk",	spr_kris_light_up,		spr_kris_light_down,
-							spr_kris_light_left,	spr_kris_light_right);
+char_sprite_map_default(map, "stand");
+char_sprite_map_4dir(map, "stand",	spr_kris_light_up,		spr_kris_light_down,
+									spr_kris_light_left,	spr_kris_light_right);
+char_sprite_map_4dir(map, "walk",	spr_kris_light_up,		spr_kris_light_down,
+									spr_kris_light_left,	spr_kris_light_right);
 
-var map = char_map_create();
+var map = char_sprite_map_create();
 global.charMapDarkKris = map;
-char_map_default(map, "stand");
-char_map_4dir(map, "stand",	spr_kris_dark_up,		spr_kris_dark_down,
-							spr_kris_dark_left,		spr_kris_dark_right);
-char_map_4dir(map, "walk",	spr_kris_dark_up,		spr_kris_dark_down,
-							spr_kris_dark_left,		spr_kris_dark_right);
+char_sprite_map_default(map, "stand");
+char_sprite_map_4dir(map, "stand",	spr_kris_dark_up,		spr_kris_dark_down,
+									spr_kris_dark_left,		spr_kris_dark_right);
+char_sprite_map_4dir(map, "walk",	spr_kris_dark_up,		spr_kris_dark_down,
+									spr_kris_dark_left,		spr_kris_dark_right);
 
-var map = char_map_create();
+var map = char_sprite_map_create();
 global.charMapLightSusie = map;
-char_map_default(map, "stand");
-char_map_4dir(map, "stand",	spr_susie_light_up,		spr_susie_light_down,
-							spr_susie_light_left,	spr_susie_light_right);
-char_map_4dir(map, "walk",	spr_susie_light_up,		spr_susie_light_down,
-							spr_susie_light_left,	spr_susie_light_right);
+char_sprite_map_default(map, "stand");
+char_sprite_map_4dir(map, "stand",	spr_susie_light_up,		spr_susie_light_down,
+									spr_susie_light_left,	spr_susie_light_right);
+char_sprite_map_4dir(map, "walk",	spr_susie_light_up,		spr_susie_light_down,
+									spr_susie_light_left,	spr_susie_light_right);
 
-var map = char_map_create();
+var map = char_sprite_map_create();
 global.charMapDarkSusie = map;
-char_map_default(map, "stand");
-char_map_4dir(map, "stand",	spr_susie_dark_up,		spr_susie_dark_down,
-							spr_susie_dark_left,	spr_susie_dark_right);
-char_map_4dir(map, "walk",	spr_susie_dark_up,		spr_susie_dark_down,
-							spr_susie_dark_left,	spr_susie_dark_right);
+char_sprite_map_default(map, "stand");
+char_sprite_map_4dir(map, "stand",	spr_susie_dark_up,		spr_susie_dark_down,
+									spr_susie_dark_left,	spr_susie_dark_right);
+char_sprite_map_4dir(map, "walk",	spr_susie_dark_up,		spr_susie_dark_down,
+									spr_susie_dark_left,	spr_susie_dark_right);
 
-var map = char_map_create();
+var map = char_sprite_map_create();
 global.charMapRalsei = map;
-char_map_default(map, "stand");
-char_map_4dir(map, "stand",	spr_ralsei_up,		spr_ralsei_down,
-							spr_ralsei_left,	spr_ralsei_right);
-char_map_4dir(map, "walk",	spr_ralsei_up,		spr_ralsei_down,
-							spr_ralsei_left,	spr_ralsei_right);
+char_sprite_map_default(map, "stand");
+char_sprite_map_4dir(map, "stand",	spr_ralsei_up,		spr_ralsei_down,
+									spr_ralsei_left,	spr_ralsei_right);
+char_sprite_map_4dir(map, "walk",	spr_ralsei_up,		spr_ralsei_down,
+									spr_ralsei_left,	spr_ralsei_right);
 
 
 

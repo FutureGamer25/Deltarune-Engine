@@ -12,7 +12,7 @@ if (newPos > pos) {
 } else {
 	image_index = 0;
 	image_speed = 0;
-	char_sprite_state_delay_frame(charSprite, "stand");
+	char_sprite_state_delay(charSprite, "stand");
 }
 
 char_sprite_update(charSprite);

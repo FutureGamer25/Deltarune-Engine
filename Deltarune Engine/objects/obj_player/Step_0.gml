@@ -2,7 +2,7 @@ if get_pause() {
 	running = false;
 	image_index = 0;
 	image_speed = 0;
-	char_sprite_state_delay_frame(charSprite, "stand");
+	char_sprite_state_delay(charSprite, "stand");
 } else {
 
 
@@ -52,7 +52,7 @@ if moving {
 } else {
 	image_index = 0;
 	image_speed = 0;
-	char_sprite_state_delay_frame(charSprite, "stand");
+	char_sprite_state_delay(charSprite, "stand");
 }
 
 char_sprite_dir(charSprite, horizontal, vertical);
