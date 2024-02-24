@@ -1,6 +1,12 @@
 randomize();
 global.dt = 1 / game_get_speed(gamespeed_fps);
 
+#region extension config
+
+//instance_create_depth(0, 0, 0, obj_gmlive);
+
+#endregion
+
 #region window
 //remember to set the size of rm_init to the scaled dimensions
 //otherwise the screen may look weird for a second

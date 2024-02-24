@@ -1,0 +1,1 @@
+instance_destroy(obj_battle_party_member);
