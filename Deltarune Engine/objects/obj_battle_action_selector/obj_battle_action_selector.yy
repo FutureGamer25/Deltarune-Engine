@@ -1,13 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_battle_action_selection",
-  "eventList": [],
+  "name": "obj_battle_action_selector",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "BattlePhases",
-    "path": "folders/General/Battle/BattlePhases.yy",
+    "name": "PartyActionSelection",
+    "path": "folders/General/Battle/BattlePhases/PartyActionSelection.yy",
   },
   "parentObjectId": null,
   "persistent": false,

@@ -2,9 +2,11 @@ bgmId = noone;//audio_play_sound(bgm, 100, true);
 
 
 turn = 0;
-enemy_units = [];
-party_units = [];
+party = party_get_array();
+enemyUnits = [];
+partyUnits = [];
 
+partyActionsSelected = [];
 
 // Create display objects
 var unitDepthOffset = 999;
@@ -14,7 +16,7 @@ instance_create_depth(0, 0, depth - 200, obj_battle_party);
 
 for (var i = 0; i < array_length(enemies); i++)
 {
-	enemy_units[i] = instance_create_depth(
+	enemyUnits[i] = instance_create_depth(
 		x + 270 + i * 5,
 		y + 55 + i * 45,
 		depth - i - unitDepthOffset,
@@ -27,7 +29,7 @@ for (var i = 0; i < array_length(enemies); i++)
 
 for (var i = 0; i < array_length(global.party); i++)
 {
-	party_units[i] = instance_create_depth(
+	partyUnits[i] = instance_create_depth(
 		x + 70 + i * 5,
 		y + 55 + i * 45,
 		depth - i - unitDepthOffset,
@@ -52,8 +54,8 @@ battleState = new state_machine(
 
 		"actionSelection": {
 			"enter": function() {
-				show_message("Action Selection");
-				stateController = instance_create_depth(0, 0, 0, obj_battle_action_selection);
+				stateController = instance_create_depth(0, 0, 0, obj_battle_party_selector);
+				stateController.open(partyActionsSelected);
 			},
 		},
 

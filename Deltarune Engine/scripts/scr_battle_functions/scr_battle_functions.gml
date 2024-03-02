@@ -29,6 +29,10 @@ function battle_set_state(newStateName) {
 }
 
 // TO BE IMPLEMENTED
+function battle_get_party_count() {
+	return array_length(obj_battle.party);
+}
+
 function battle_get_enemy_count() {
 }
 

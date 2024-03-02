@@ -1,0 +1,1 @@
+#macro TEMP_BATTLE_DEPTH -100
