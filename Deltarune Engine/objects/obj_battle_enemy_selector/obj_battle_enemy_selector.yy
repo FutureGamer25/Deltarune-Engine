@@ -1,15 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_battle_option_spare",
+  "name": "obj_battle_enemy_selector",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "SelectionMenus",
-    "path": "folders/General/Battle/BattlePhases/PartyActionSelection/SelectionMenus.yy",
+    "name": "SelectionSubMenus",
+    "path": "folders/General/Battle/BattlePhases/PartyActionSelection/SelectionMenus/SelectionSubMenus.yy",
   },
   "parentObjectId": null,
   "persistent": false,

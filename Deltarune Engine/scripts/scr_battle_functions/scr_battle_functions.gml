@@ -33,10 +33,16 @@ function battle_get_party_count() {
 	return array_length(obj_battle.party);
 }
 
+function battle_get_party() {
+	return obj_battle.party;
+}
+
 function battle_get_enemy_count() {
+	return 0;
 }
 
 function battle_get_enemies() {
+	return [];
 }
 
 function battle_show_dialog(dialog_key) {
