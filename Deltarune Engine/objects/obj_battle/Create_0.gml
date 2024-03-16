@@ -44,7 +44,6 @@ for (var i = 0; i < array_length(global.party); i++)
 // Create battle state machine
 stateController = noone;
 battleState = new state_machine(
-	"intro",
 	{
 		"intro": {
 			"step": function() {
@@ -81,4 +80,4 @@ battleState = new state_machine(
 		},
 	}
 );
-
+battleState.set_state("intro");

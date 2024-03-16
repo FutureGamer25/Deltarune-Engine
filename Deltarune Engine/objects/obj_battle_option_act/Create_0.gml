@@ -10,7 +10,6 @@ event_user(15);
 
 
 selectionState = new state_machine(
-	"enemySelection",
 	{
 		"enemySelection": {
 			"enter": function() {
@@ -35,4 +34,4 @@ selectionState = new state_machine(
 		}
 	}
 );
-
+selectionState.set_state("enemySelection");

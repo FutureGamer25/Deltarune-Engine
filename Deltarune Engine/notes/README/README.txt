@@ -1,6 +1,9 @@
 State Machines
 ========================================
-To create a state machine, you must define your states as structs. The properties the structs can have are:
+To create a state machine, you must define your states as structs.
+
+These structs can have an arbitrary shape, but recommended
+properties could include:
 - enter
 - leave
 - step
@@ -8,28 +11,22 @@ To create a state machine, you must define your states as structs. The propertie
 
 The state machine is then created as shown below:
 
-	new state_machine("initialState", stateStruct);
+var fsm = new state_machine(states_struct);
 
 A more detailed example is provided below.
 
-
 State Machine Functions
 -----------------------
-change(newStateName, parameters): Change the current state
-step(): Run the state's step function
-draw(): Run the state's draw function
-get_state(): Returns the current state name
-get_previous_state(): Return the previous state name
-get_ticks(): Returns the number of Step events run for the current state
-
-add(stateName, stateStruct): Add a new state to the machine
-remove(stateName): Delete a state from the machine
+set_state(state_name): Change the current state
+get_state(): Gets the state data
+get_state_name(): Get the current state name
+prev_state_name(): Return the previous state name
 
 
 Example Usage
 -------------
 
-var stateIdle = {
+var state_idle = {
 	enter: function() {},
 	leave: function() {},
 	step: function() {},
@@ -40,22 +37,10 @@ var stateIdle = {
 
 // States can be passed in directly
 new state_machine(
-	"idle",
 	{
 		idle: stateIdle,
 		run: stateRunning,
 		jump: stateWalking
-	}
-);
-
-// They can also be passed indirectly in case parameters need to be passed
-// Example: function() { return StateRun(runSpeed); }
-new state_machine(
-	"idle",
-	{
-		idle: function() { return stateIdle(); },
-		run: function() { return stateRun(); },
-		jump: function() { return stateJump(); }
 	}
 );
 

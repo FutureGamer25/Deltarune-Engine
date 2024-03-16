@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_inventory_functions",
+  "name": "scr_state_machine",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
